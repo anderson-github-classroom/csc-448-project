@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+## COVID-19 Bioinformatics
 
-You can use the [editor on GitHub](https://github.com/anderson-github-classroom/csc-448-project/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+The purpose of this site is to aggregate bioinformatic analysis of COVID-19 by Cal Poly students (primarily) and faculty.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Highlights
+Coming soon
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/anderson-github-classroom/csc-448-project/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Individual Pages
+* <a href="/pander14/">Instructor Sample</a>
+* <a href="/eagranof/">Ethan Agranoff</a>
+* <a href="/nabishop/">Nicholas Allyn Bishop</a>
+* <a href="/cbrow145/">Calvin Long Brown</a>
+* <a href="/cpcampbe/">Chelsea Rose Pelina Campbell</a>
+* <a href="/ccromer/">Carter Graham Cromer</a>
+* <a href="/jdatecho/">Jonathan Thompson Date-Chong</a>
+* <a href="/sellerts/">Samuel James Ellertson</a>
+* <a href="/sfrazee/">Samuel David Frazee</a>
+* <a href="/rgadgil/">Richa Gadgil</a>
+* <a href="/mhowland/">McClane Howland</a>
+* <a href="/cilg/">Bart Bartholomew Ilg</a>
+* <a href="/eainman/">Eric Alexander Inman</a>
+* <a href="/bfkwong/">Bryan Fuk Chuan Kwong</a>
+* <a href="/klabel/">Kevin T. Label</a>
+* <a href="/enewcome/">Eric Jiaming Newcomer</a>
+* <a href="/wiobrien/">William Terrence O'Brien</a>
+* <a href="/ncpalmie/">Nathan Carl Palmiero</a>
+* <a href="/pamidi/">Sai Swaroop Pamidi</a>
+* <a href="/spate136/">Sheel Umesh Patel</a>
+* <a href="/npestes/">Nathan Pestes</a>
+* <a href="/arajiv/">Anand Rajiv</a>
+* <a href="/dsanch65/">Donald Scott Sanchez</a>
+* <a href="/jsaya/">Jonah Francis Saya</a>
+* <a href="/altschop/">Alexander Lukas Tschopp</a>
+* <a href="/cvtu/">Calantha Victoria Tu</a>
+* <a href="/aveluru/">Akhil Veluru</a>
+* <a href="/zwinger/">Zachary Ross Winger</a>
