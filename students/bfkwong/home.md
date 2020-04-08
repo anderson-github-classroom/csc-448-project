@@ -6,7 +6,7 @@ excerpt: "CSC 448 Bioinformatics Algorithms Project"
 
 ## I. PROJECT 1 
 
-
+<!-- #region -->
 This week, I will explore the available sources of bioinformatics data that are currently available on the internet right now. Since COVID-19 was first discovered in Hubei at the end of 2019, labs all across the world has been working hard to sequence the genome of this Coronavirus. While this is hard and expensive work, it is crucial for tracking how the disease is spreading across the globe as well as identify methods of intervention.
 
 Since much work has already been done in identifying and analyzing COVID-19's genome. It is worth the effort to read through and catch up on what has already been done and build on top of that work. Fortunately in the age of the internet, a lot of this research is already online, making it easy find other research. 
@@ -38,25 +38,28 @@ This paper (published by the American Society of Microbiology) explained the pro
 
 1. **SARS-CoV-2 Nucleotide Sequence Length:** 29,811 nucleotides
 2. **Nucleotide Composition:** 
->* 29.86% adenosines
->* 18.39% cytosines
->* 19.63% guanines
->* 32.12% thymines. 
+  * 29.86% adenosines
+  * 18.39% cytosines
+  * 19.63% guanines
+  * 32.12% thymines. 
+  
+  
 3. **Mutations from COVID-19 Sequenced in Wuhan**: 
->* ORF1a, codons AGT to AGC, silent mutation
->* ORF1a, codons TTA to TCA, nonsilent mutation
->* ORF1b, codons CTA to TTA, silent mutation
->* ORF8b, codons TCA to TTA, nonsilent mutation
->* nucleocapsid, codons TTT to TTC, silent mutation
+  * ORF1a, codons AGT to AGC, silent mutation
+  * ORF1a, codons TTA to TCA, nonsilent mutation
+  * ORF1b, codons CTA to TTA, silent mutation
+  * ORF8b, codons TCA to TTA, nonsilent mutation
+  * nucleocapsid, codons TTT to TTC, silent mutation
+  
+  
 4. **Deamination Location from COVID-19 Sequenced in Wuhan**: 
->* Site 24019 vs 2019-nCoV WHU01
->* Site 24019 vs Wuhan-Hu-1
+  * Site 24019 vs 2019-nCoV WHU01
+  * Site 24019 vs Wuhan-Hu-1
+  
+  
 5. **Similarity with COVID-19 Sequenced in Wuhan**: > 99.99%
 
 ### D. Conclusion 
 
 Since December 2019, a huge amount of research has been done on this Coronavirus making it one of the most thoroughly studied virus. However, there is still a lot of work to be done to fully understand how the virus works and what we can do to stop it. A lot of information is floating out there on the internet yet to be analyzed and understood. It is the purpose of CSC448 to both teach me how to do that type of analysis as well as contribute to the scientific community. 
-
-```python
-
-```
+<!-- #endregion -->
