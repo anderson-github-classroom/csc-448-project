@@ -36,3 +36,4 @@ Coming soon
 * <a href="/csc-448-project/zwinger/">Zachary Ross Winger</a>
 * <a href="/csc-448-project/acengel/">Alexander C. Engel</a>
 * <a href="/csc-448-project/awengel/">Andrew W. Engel</a>
+* <a href="/csc-448-project/skurdogh/">Sarah Kurdoghlian</a>
