@@ -4,7 +4,7 @@
 
 layout: home
 heading: CSC 448 Bioinformatics Algorithms Project
-sub-title: Aggregating research and practicing bioinformatic analysis of COVID-19
+sub-title: Aggregating research and practicing bioinformatic analysis for COVID-19
 list_title: Weekly Posts
 ---
 

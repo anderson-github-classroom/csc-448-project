@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
   {%- if page.heading -%}
-    <h1 class="page-heading">{{ page.heading }}</h1>
+    <h1 class="page-heading" style="margin-bottom: 0">{{ page.heading }}</h1>
   {%- endif -%}
     <h4>{{page.sub-title}}</h4>
 
@@ -25,9 +25,9 @@ layout: default
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
-      <li>
+      <li style="border-bottom: 2px red">
         <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
+        <h3 style="margin-bottom: 0">
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>

@@ -1,9 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/csc-448-project/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/csc-448-project/" rel="alternate" type="text/html" /><updated>2020-04-08T15:43:09-07:00</updated><id>http://localhost:4000/csc-448-project/feed.xml</id><title type="html">COVID-19 Bioinformatics | Sarah Kurdoghlian</title><subtitle>This project was conducted as part of CSC 448 Bioinformatics Algorithms, Cal Poly.</subtitle><author><name>Sarah Kurdoghlian</name><email>skurdogh@calpoly.edu</email></author><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/csc-448-project/jekyll/update/2020/04/08/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-04-08T11:48:07-07:00</published><updated>2020-04-08T11:48:07-07:00</updated><id>http://localhost:4000/csc-448-project/jekyll/update/2020/04/08/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/csc-448-project/jekyll/update/2020/04/08/welcome-to-jekyll.html">&lt;h1&gt;&lt;/h1&gt;
-&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-08T21:00:43-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">COVID-19 Bioinformatics | Sarah Kurdoghlian</title><subtitle>This project was conducted as part of CSC 448 Bioinformatics Algorithms, Cal Poly.</subtitle><author><name>Sarah Kurdoghlian</name><email>skurdogh@calpoly.edu</email></author><entry><title type="html">An Investigation and Review of Online Coronavirus Resources</title><link href="http://localhost:4000/jekyll/update/2020/04/08/welcome-to-jekyll.html" rel="alternate" type="text/html" title="An Investigation and Review of Online Coronavirus Resources" /><published>2020-04-08T11:48:07-07:00</published><updated>2020-04-08T11:48:07-07:00</updated><id>http://localhost:4000/jekyll/update/2020/04/08/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/04/08/welcome-to-jekyll.html">&lt;h3 id=&quot;1-complete-genome-sequence-of-a-2019-novel-coronavirus-sars-cov-2-strain-isolated-in-nepal&quot;&gt;1) &lt;a href=&quot;https://mra.asm.org/content/9/11/e00169-20&quot;&gt;Complete Genome Sequence of a 2019 Novel Coronavirus (SARS-CoV-2) Strain Isolated in Nepal&lt;/a&gt;&lt;/h3&gt;
+&lt;h5 id=&quot;overview&quot;&gt;&lt;strong&gt;Overview&lt;/strong&gt;&lt;/h5&gt;
+&lt;p&gt;A swab specimen of a Nepalese resident, who acquired the virus in Wuhan, China, and imported it to Nepal, allowed for a complete genome sequencing of a SARS-CoV-2 strain. This journal was written in early February and published in early March, so the information is from earlier stages of the pandemic.&lt;/p&gt;
+&lt;h5 id=&quot;sequencing-process&quot;&gt;&lt;strong&gt;Sequencing Process&lt;/strong&gt;&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;The swab specimen is of a 32-year-old man&lt;/li&gt;
+  &lt;li&gt;The specimen tested positve for SARS-CoV-2 by real-time reverse transcriptase PCR&lt;/li&gt;
+  &lt;li&gt;There were 5,246,584 paired-end sequences in the raw data&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;h5 id=&quot;the-genome-sequence-of-coronavirus-2019&quot;&gt;&lt;strong&gt;The Genome Sequence of Coronavirus 2019&lt;/strong&gt;&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;The swab specimen genome was compared to two previously sequenced genomes for SARS-CoV-2 from Wuhan, China
+    &lt;ul&gt;
+      &lt;li&gt;There was &amp;gt;99.99% identity&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The final sequenced genome of SARS-CoV-2 is a single, positive-stranded RNA
+    &lt;ul&gt;
+      &lt;li&gt;29,811 nucleotides long&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Nucleotide breakdown:
+    &lt;ul&gt;
+      &lt;li&gt;29.86% adenosines&lt;/li&gt;
+      &lt;li&gt;18.39% cytosines&lt;/li&gt;
+      &lt;li&gt;19.63% guanines&lt;/li&gt;
+      &lt;li&gt;32.12% thymines&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;!-- You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+
+To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+
+Jekyll also offers powerful support for code snippets:
+
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
@@ -11,4 +43,9 @@
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>Sarah Kurdoghlian</name><email>skurdogh@calpoly.edu</email></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/ --&gt;</content><author><name>Sarah Kurdoghlian</name><email>skurdogh@calpoly.edu</email></author><summary type="html">Summary and analysis of a few online resources that provide coronavirus information.</summary></entry></feed>
