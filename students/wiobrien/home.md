@@ -1,6 +1,6 @@
 ---
 permalink: /wiobrien/
-title: "PUT YOUR NAME HERE"
+title: "William O'Brien"
 excerpt: "CSC 448 Bioinformatics Algorithms Project"
 ---
 
