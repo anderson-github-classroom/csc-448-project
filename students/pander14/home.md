@@ -1,5 +1,5 @@
 ---
-permalink: /pander14/
+permalink: /sample/
 title: "Paul Anderson"
 excerpt: "CSC 448 Bioinformatics Algorithms Project"
 ---
