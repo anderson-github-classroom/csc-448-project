@@ -165,7 +165,7 @@ table td { border: 1px solid #e8e8e8; }
 
 .feed-subscribe .svg-icon { padding: 5px 5px 2px 0; }
 
-.contact-list, .social-media-list, .pagination { list-style: none; margin-left: 0; }
+.contact-list, .social-media-list, .pagination { list-style: none; }
 
 .footer-col-wrapper, .social-links { font-size: 0.9375rem; color: #828282; }
 
@@ -213,7 +213,7 @@ table td { border: 1px solid #e8e8e8; }
 .post-content h5 { font-size: 1.125rem; }
 .post-content h6 { font-size: 1.0625rem; }
 
-.social-media-list, .pagination { display: table; margin: 0 auto; }
+.social-media-list, .pagination { display: table; }
 .social-media-list li, .pagination li { float: left; margin: 5px 10px 5px 0; }
 .social-media-list li:last-of-type, .pagination li:last-of-type { margin-right: 0; }
 .social-media-list li a, .pagination li a { display: block; padding: 7.5px; border: 1px solid #e8e8e8; }
