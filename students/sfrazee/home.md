@@ -10,9 +10,9 @@ excerpt: "CSC 448 Bioinformatics Algorithms Project"
 
 GISAID is an organization that collects, categorizes, and organizes virus sequences for analysis.
 
-## [Nexstrain](https://nextstrain.org/ncov/global)
+## [Nextstrain](https://nextstrain.org/ncov/global)
 
-Nexstrain processes GISAID's huge list of virus sequences and organizes them into an easily-viewable phylogeny of hCoV-19.
+Nextstrain processes GISAID's huge list of virus sequences and organizes them into an easily-viewable phylogeny of hCoV-19.
 
 ## [Complete Genomic Sequence of a SARS-CoV-2 Strain](https://mra.asm.org/content/9/11/e00169-20)
 
