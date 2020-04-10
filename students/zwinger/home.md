@@ -4,7 +4,6 @@ title: "Zachary Winger"
 excerpt: "CSC 448 Bioinformatics Algorithms Project"
 ---
 
-Put your content here
 ## 1. GISAID Initiative
 GISAID, Global initiative on Sharing All Influenza Data, is a partnership between the intiative's administrative arm Freunde of GISAID, a non-profit, and the governments of Germany, Singapore, and the USA. The goal of GISAID is to provide a free, open-source location for people all over the world to share all influenza virus sequences, related data associated with human viruses, and data associated with avian and animal viruses. The initiative ensures this open-source access for all provided individuals identify themselves, and give proper credit to the source(s) of all data provided.
 
