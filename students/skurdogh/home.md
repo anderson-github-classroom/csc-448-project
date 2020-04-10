@@ -1,8 +1,11 @@
 ---
 title: Sarah Kurdoghlian
-excerpt: CSC 448 Bioinformatics Algorithms Project
+description: "CSC 448 Bioinformatics Algorithms Project"
 permalink: /skurdogh/
 ---
+
+# Week 1
+To begin our research, we will be reviewing a few online coronavirus resources. This will help consolidate reliable sources of information.
 
 ### 1) [Complete Genome Sequence of a 2019 Novel Coronavirus (SARS-CoV-2) Strain Isolated in Nepal](https://mra.asm.org/content/9/11/e00169-20)
 #### **Overview**
