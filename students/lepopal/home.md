@@ -1,6 +1,6 @@
 ---
-permalink: /wiobrien/
-title: "William O'Brien"
+permalink: /lepopal/
+title: "Lemar Popal"
 excerpt: "CSC 448 Bioinformatics Algorithms Project"
 ---
 
