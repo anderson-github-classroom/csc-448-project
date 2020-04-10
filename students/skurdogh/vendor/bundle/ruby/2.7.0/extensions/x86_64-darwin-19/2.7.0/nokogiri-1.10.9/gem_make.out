@@ -1,5 +1,5 @@
-current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/ext/nokogiri
-/usr/local/opt/ruby/bin/ruby -I /usr/local/Cellar/ruby/2.7.1/lib/ruby/2.7.0 -r ./siteconf20200408-74413-hdtcx5.rb extconf.rb
+current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/ext/nokogiri
+/usr/local/opt/ruby/bin/ruby -I /usr/local/Cellar/ruby/2.7.1/lib/ruby/2.7.0 -r ./siteconf20200410-16745-7zljo5.rb extconf.rb
 checking if the C compiler accepts  -I /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libxml2... yes
 checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
 Building nokogiri using packaged libraries.
@@ -36,15 +36,15 @@ Note, however, that nokogiri is not fully compatible with arbitrary
 versions of libxml2 provided by OS/package vendors.
 ************************************************************************
 Extracting libxml2-2.9.10.tar.gz into tmp/x86_64-apple-darwin19.4.0/ports/libxml2/2.9.10... OK
-Running git apply with /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/patches/libxml2/0001-Revert-Do-not-URI-escape-in-server-side-includes.patch... OK
-Running git apply with /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/patches/libxml2/0002-Remove-script-macro-support.patch... OK
-Running git apply with /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/patches/libxml2/0003-Update-entities-to-remove-handling-of-ssi.patch... OK
-Running git apply with /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/patches/libxml2/0004-libxml2.la-is-in-top_builddir.patch... OK
-Running git apply with /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/patches/libxml2/0005-Fix-infinite-loop-in-xmlStringLenDecodeEntities.patch... OK
+Running git apply with /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/patches/libxml2/0001-Revert-Do-not-URI-escape-in-server-side-includes.patch... OK
+Running git apply with /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/patches/libxml2/0002-Remove-script-macro-support.patch... OK
+Running git apply with /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/patches/libxml2/0003-Update-entities-to-remove-handling-of-ssi.patch... OK
+Running git apply with /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/patches/libxml2/0004-libxml2.la-is-in-top_builddir.patch... OK
+Running git apply with /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/patches/libxml2/0005-Fix-infinite-loop-in-xmlStringLenDecodeEntities.patch... OK
 Running 'configure' for libxml2 2.9.10... OK
 Running 'compile' for libxml2 2.9.10... OK
 Running 'install' for libxml2 2.9.10... OK
-Activating libxml2 2.9.10 (from /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/ports/x86_64-apple-darwin19.4.0/libxml2/2.9.10)...
+Activating libxml2 2.9.10 (from /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/ports/x86_64-apple-darwin19.4.0/libxml2/2.9.10)...
 ************************************************************************
 IMPORTANT NOTICE:
 
@@ -68,7 +68,7 @@ Extracting libxslt-1.1.34.tar.gz into tmp/x86_64-apple-darwin19.4.0/ports/libxsl
 Running 'configure' for libxslt 1.1.34... OK
 Running 'compile' for libxslt 1.1.34... OK
 Running 'install' for libxslt 1.1.34... OK
-Activating libxslt 1.1.34 (from /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/ports/x86_64-apple-darwin19.4.0/libxslt/1.1.34)...
+Activating libxslt 1.1.34 (from /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/ports/x86_64-apple-darwin19.4.0/libxslt/1.1.34)...
 checking for -llzma... yes
 checking for xmlParseDoc() in libxml/parser.h... yes
 checking for xsltParseStylesheetDoc() in libxslt/xslt.h... yes
@@ -82,10 +82,10 @@ checking for xmlSchemaSetValidStructuredErrors()... yes
 checking for xmlSchemaSetParserStructuredErrors()... yes
 creating Makefile
 
-current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/ext/nokogiri
+current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/ext/nokogiri
 make "DESTDIR=" clean
 
-current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/ext/nokogiri
+current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/ext/nokogiri
 make "DESTDIR="
 compiling html_document.c
 compiling html_element_description.c
@@ -199,9 +199,9 @@ static void swallow_superfluous_xml_errors(void * userdata, xmlErrorPtr error, .
 1 warning generated.
 linking shared-object nokogiri/nokogiri.bundle
 Cleaning files only used during build.
-rm -rf /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/ext/nokogiri/tmp/x86_64-apple-darwin19.4.0/ports
-rm -rf /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/ports
+rm -rf /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/ext/nokogiri/tmp/x86_64-apple-darwin19.4.0/ports
+rm -rf /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/ports
 
-current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/ext/nokogiri
+current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.10.9/ext/nokogiri
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20200408-74413-1mbbezo/nokogiri
+/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20200410-16745-8yj3i4/nokogiri

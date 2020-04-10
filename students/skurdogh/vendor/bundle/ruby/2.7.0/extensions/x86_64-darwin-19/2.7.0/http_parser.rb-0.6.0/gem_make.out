@@ -1,16 +1,16 @@
-current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
-/usr/local/opt/ruby/bin/ruby -I /usr/local/Cellar/ruby/2.7.1/lib/ruby/2.7.0 -r ./siteconf20200408-68506-1471pqf.rb extconf.rb
+current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/usr/local/opt/ruby/bin/ruby -I /usr/local/Cellar/ruby/2.7.1/lib/ruby/2.7.0 -r ./siteconf20200410-16745-1z0h999.rb extconf.rb
 creating Makefile
 
-current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
 make "DESTDIR=" clean
 
-current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
 make "DESTDIR="
 compiling ruby_http_parser.c
 compiling ryah_http_parser.c
 linking shared-object ruby_http_parser.bundle
 
-current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20200408-68506-1aj431x
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20200410-16745-1s1i977

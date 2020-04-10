@@ -1,11 +1,11 @@
-current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/commonmarker-0.17.13/ext/commonmarker
-/usr/local/opt/ruby/bin/ruby -I /usr/local/Cellar/ruby/2.7.1/lib/ruby/2.7.0 -r ./siteconf20200408-74413-1ydvke9.rb extconf.rb
+current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/commonmarker-0.17.13/ext/commonmarker
+/usr/local/opt/ruby/bin/ruby -I /usr/local/Cellar/ruby/2.7.1/lib/ruby/2.7.0 -r ./siteconf20200410-16745-1obkfqs.rb extconf.rb
 creating Makefile
 
-current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/commonmarker-0.17.13/ext/commonmarker
+current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/commonmarker-0.17.13/ext/commonmarker
 make "DESTDIR=" clean
 
-current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/commonmarker-0.17.13/ext/commonmarker
+current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/commonmarker-0.17.13/ext/commonmarker
 make "DESTDIR="
 compiling arena.c
 compiling autolink.c
@@ -116,6 +116,6 @@ compiling utf8.c
 compiling xml.c
 linking shared-object commonmarker/commonmarker.bundle
 
-current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/dev/vendor/bundle/ruby/2.7.0/gems/commonmarker-0.17.13/ext/commonmarker
+current directory: /Users/sarahkurdoghlian/Desktop/csc448/csc-448-project/students/skurdogh/vendor/bundle/ruby/2.7.0/gems/commonmarker-0.17.13/ext/commonmarker
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 commonmarker.bundle ./.gem.20200408-74413-em1v7x/commonmarker
+/usr/bin/install -c -m 0755 commonmarker.bundle ./.gem.20200410-16745-r3302u/commonmarker
