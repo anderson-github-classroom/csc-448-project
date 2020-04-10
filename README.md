@@ -6,7 +6,7 @@ The purpose of this site is to aggregate bioinformatic analysis of COVID-19 by C
 Coming soon
 
 ### Individual Pages
-* <a href="/csc-448-project/pander14/">Instructor Sample</a>
+* <a href="/csc-448-project/sample/">Sample</a>
 * <a href="/csc-448-project/eagranof/">Ethan Agranoff</a>
 * <a href="/csc-448-project/nabishop/">Nicholas Allyn Bishop</a>
 * <a href="/csc-448-project/cbrow145/">Calvin Long Brown</a>
@@ -38,3 +38,4 @@ Coming soon
 * <a href="/csc-448-project/awengel/">Andrew W. Engel</a>
 * <a href="/csc-448-project/skurdogh/">Sarah Kurdoghlian</a>
 * <a href="/csc-448-project/lepopal/">Lemar Popal</a>
+* <a href="/csc-448-project/kdyson/">Kiana Dyson</a>
