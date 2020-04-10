@@ -22,7 +22,7 @@ author:
 # site-intro: Aggregating research and bioinformatic analysis of COVID-19 
 description: >- # this means to ignore newlines until "baseurl:"
   This project was conducted as part of CSC 448 Bioinformatics Algorithms, Cal Poly.
-baseurl: "/csc-448-project/skurdogh" # the subpath of your site, e.g. /blog
+baseurl: "/csc-448-project" # the subpath of your site, e.g. /blog
 url: "https://anderson-github-classroom.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 show_excerpts: true
 
