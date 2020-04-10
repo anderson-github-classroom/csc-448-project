@@ -1,6 +1,6 @@
 ---
 permalink: /pamidi/
-title: "PUT YOUR NAME HERE"
+title: "SAI SWAROOP PAMIDI"
 excerpt: "CSC 448 Bioinformatics Algorithms Project"
 ---
 
