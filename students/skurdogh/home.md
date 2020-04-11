@@ -28,7 +28,7 @@ A swab specimen of a Nepalese resident, who acquired the virus in Wuhan, China, 
 
 ### 2) [FOLDING@HOME](https://foldingathome.org/)
 #### **Overview**
-The project's goal is to simulate protein dynamics, like protein folding and movement, in order to understand the diseases that result from protein misfolding. 
+The **project's goal** is to simulate protein dynamics, like protein folding and movement, in order to understand the diseases that result from protein misfolding. This is achieved by using computer simulations.
 
 This project is powered by distributed computing, which is when multiple computers are used to run components of a software in order to improve performance. It needs to run calculations on millions of computers at a time.
 
@@ -48,4 +48,28 @@ The project hopes to produce results in the form of peer-reviewed publications a
   - So seeing the protein in action is important
 - Additional article details found [here](https://foldingathome.org/2020/03/15/coronavirus-what-were-doing-and-how-you-can-help-in-simple-terms/)
 
-#### **Results and Findings**
+### 3) [Nextstrain](https://nextstrain.org/)
+#### **Overview**
+Real-time tracking, analytics, and visualizations of coronavirus data that is submitted by labratories and publically available through [GISAID](https://www.gisaid.org/). This real-time data helps improve outbreak response.
+
+#### **Analytics**
+- The data is presented in a phylogenic tree, showing the spread of the hCoV-19 viruses
+    - The root of the phylogeny starts in Wuhan, China in Nov 2019, and continues to branch with human-to-human transmission
+- You can narrow the visualization with filters:
+    - Filters include by labratory submission date, country, region, and submitting lab.
+
+#### **Nextstrain's Bioinformatic Toolkit**
+- Nextstrain uses the bioinformatics toolkit called [Augur](https://github.com/nextstrain/augur).
+    - Augur has commands for different bioinformatic tasks
+    - For example, `augur translate` will will translate gene regions from nucleotides to amino acids.
+    - Here is a full list of [Augur commands](https://nextstrain.org/docs/bioinformatics/augur-commands)
+
+### 4) [COVID-19 analysis using the Galaxy Project](https://covid19.galaxyproject.org/)
+#### **Overview**
+Analysis of SARS-CoV-2 data conducted with open source tools and publicly accessible infrastructure, such as the [Galaxy platform](https://galaxyproject.org/) and [BioConda](https://bioconda.github.io/), making it easy to reproduce.
+
+#### **Analyses**
+Three different workflows are featured:
+1. [Genomics](https://covid19.galaxyproject.org/genomics/): This analysis assembles a SARS-CoV-2 genome and looks at sites for intra-host variation. **The current results show 397 sites showing intra-host variation across 33 samples.**
+2. [Evolution](https://covid19.galaxyproject.org/evolution/): Looks at what positions in the SARS-CoV-2 genome can be a location for positive selection (involved in adaptation), or negative selection (static during evolution). Currently, the analysis has found **about 5 genomic positions that should be considered for further investigation because they are a condidate for diversifying and evolving.** A key finding when analyzing the [genomic divergence of COVID-19](https://covid19.galaxyproject.org/evolution/1-DiversityDivergence.html) was that **there is no clear upward trend that might indicate that the virus is evolving away from the founder strain.**
+3. [Cheminformatics](https://covid19.galaxyproject.org/cheminformatics/#background): Performing computational analysis to identify potential inhibiting compounds that can bind to the proteins that are vital for the life-cycle of SARS-CoV-2. Inhibiting compounds can be used to control how fast the virus replicates and grows, making it possible to create medicinal treatement. This analysis **found 500 high scoring compounds that are likely to bind (from the 40,000 analyzed).**
