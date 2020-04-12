@@ -54,12 +54,34 @@ The article and its findings are extremely important to the bioinformatics and s
 
 ## [Best practices for the analysis of SARS-CoV-2 data: Genomics, Evolution, and Cheminformatics](https://covid19.galaxyproject.org/)
 ### What is it?
+The above website is a project created by the [Galaxy Project](https://galaxyproject.org/) that seeks to provide the tools and infrastructure needed for users to analyze viral datasets. The three analysis types that are featured are Genomics, Evolution, and Cheminformatics. What each analysis type encompasses is listed below:
+
+**Genomics**:
+- Assembly
+- MRCA timing
+- Variation analysis
+- Selection adn recombination
+
+**Evolution**:
+- Natural Selection Analysis
+- Visualizations
+- Observable Notebooks
+
+**Cheminformatics**:
+- Compound enumeration
+- Generation of 3D conformations
+- Docking
+- Scoring
+- Selection of compounds for synthesis
 
 ### Why is it important?
-
+This project, as well as the other tools provided by Galaxy, allows everybody to access powerful data science tools that enables them to participate and learn about science/data analysis. The tools are not only for computational research; they also serve as free, science/data analysis education for the public.
 
 ### Other cool things/facts:
-- 
+- The Genomics section relies on data provided by GISAID!
+- There are 397 sites showing intra-host variation across 33 samples (with frequencies between 5% and 95%). (Genomics section)
+- At present, ~5 genomic positions may merit further investigation because they may be subject to diversifying positive selection. (Evolution section)
+- 40,000 compounds were considered to be likely to bind, and were chosen based on recently published X-ray crystal structures; 500 high scoring compounds were identified. (Cheminformatics section)
 
 
 
