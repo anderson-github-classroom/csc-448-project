@@ -1,6 +1,6 @@
 ---
 title: Sarah Kurdoghlian
-description: "CSC 448 Bioinformatics Algorithms Project"
+description: "CSC 448 Bioinformatics Algorithms Project\nWe will be researching and analyzing the latest novel coronavirus data on a weekly basis as a part of CSC 448 Bioinformatics Algorithms at Cal Poly. The goal is to aggregate bioinformatic analysis of COVID-19."
 permalink: /skurdogh/
 ---
 
@@ -10,6 +10,7 @@ To begin our research, we will be reviewing a few online coronavirus resources. 
 ### 1) [Complete Genome Sequence of a 2019 Novel Coronavirus (SARS-CoV-2) Strain Isolated in Nepal](https://mra.asm.org/content/9/11/e00169-20)
 #### **Overview**
 A swab specimen of a Nepalese resident, who acquired the virus in Wuhan, China, and imported it to Nepal, allowed for a complete genome sequencing of a SARS-CoV-2 strain. This journal was written in early February and published in early March, so the information is from earlier stages of the pandemic.
+
 #### **Sequencing Process**
 - The swab specimen is of a 32-year-old man
 - The specimen tested positve for SARS-CoV-2 by real-time reverse transcriptase PCR
@@ -25,6 +26,8 @@ A swab specimen of a Nepalese resident, who acquired the virus in Wuhan, China, 
   - 18.39% cytosines
   - 19.63% guanines
   - 32.12% thymines
+
+---
 
 ### 2) [FOLDING@HOME](https://foldingathome.org/)
 #### **Overview**
@@ -48,6 +51,8 @@ The project hopes to produce results in the form of peer-reviewed publications a
   - So seeing the protein in action is important
 - Additional article details found [here](https://foldingathome.org/2020/03/15/coronavirus-what-were-doing-and-how-you-can-help-in-simple-terms/)
 
+---
+
 ### 3) [Nextstrain](https://nextstrain.org/)
 #### **Overview**
 Real-time tracking, analytics, and visualizations of coronavirus data that is submitted by labratories and publically available through [GISAID](https://www.gisaid.org/). This real-time data helps improve outbreak response.
@@ -64,6 +69,8 @@ Real-time tracking, analytics, and visualizations of coronavirus data that is su
     - For example, `augur translate` will will translate gene regions from nucleotides to amino acids.
     - Here is a full list of [Augur commands](https://nextstrain.org/docs/bioinformatics/augur-commands)
 
+---
+
 ### 4) [COVID-19 analysis using the Galaxy Project](https://covid19.galaxyproject.org/)
 #### **Overview**
 Analysis of SARS-CoV-2 data conducted with open source tools and publicly accessible infrastructure, such as the [Galaxy platform](https://galaxyproject.org/) and [BioConda](https://bioconda.github.io/), making it easy to reproduce.
@@ -73,3 +80,13 @@ Three different workflows are featured:
 1. [Genomics](https://covid19.galaxyproject.org/genomics/): This analysis assembles a SARS-CoV-2 genome and looks at sites for intra-host variation. **The current results show 397 sites showing intra-host variation across 33 samples.**
 2. [Evolution](https://covid19.galaxyproject.org/evolution/): Looks at what positions in the SARS-CoV-2 genome can be a location for positive selection (involved in adaptation), or negative selection (static during evolution). Currently, the analysis has found **about 5 genomic positions that should be considered for further investigation because they are a condidate for diversifying and evolving.** A key finding when analyzing the [genomic divergence of COVID-19](https://covid19.galaxyproject.org/evolution/1-DiversityDivergence.html) was that **there is no clear upward trend that might indicate that the virus is evolving away from the founder strain.**
 3. [Cheminformatics](https://covid19.galaxyproject.org/cheminformatics/#background): Performing computational analysis to identify potential inhibiting compounds that can bind to the proteins that are vital for the life-cycle of SARS-CoV-2. Inhibiting compounds can be used to control how fast the virus replicates and grows, making it possible to create medicinal treatement. This analysis **found 500 high scoring compounds that are likely to bind (from the 40,000 analyzed).**
+
+---
+
+### 5) [GISAID](https://www.gisaid.org/)
+#### **Overview**
+An initiative to promote the international sharing of influenza virus sequences and data.
+
+#### **Analysis**
+- Public data on GISAID of the hCoV-19 genome sequence was used by Nextstrain, mentioned above, to build [this phylogenic tree](https://www.gisaid.org/epiflu-applications/next-hcov-19-app/).
+- If you register on the site and agree to uphold GISAID data usage rules, you can have access to all the genome sequence data submitted by labratories.
