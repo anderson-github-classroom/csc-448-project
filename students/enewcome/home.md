@@ -31,7 +31,7 @@ Folding@Home is an amazing project that allows anyone with a computer and an int
 
 ## [Next Strain](https://nextstrain.org/ncov/global)
 ### What is it?
-Nest Strain is an open-source project that seeks to combine, understand, visualize, and track pathogen genome data in real time. The primary goal of the project is to increase epidemiological understanding and improve the community's response to the outbreak of viral diseases. Their latest [data and analysis page](https://nextstrain.org/ncov/global) contains a dashboard that analyzes and displays the Genetic epidemiology of the novel coronavirus. The main visualization shows the phylogeny (evolutionary history) of the virus, which can be displayed globally and by country.
+Next Strain is an open-source project that seeks to combine, understand, visualize, and track pathogen genome data in real time. The primary goal of the project is to increase epidemiological understanding and improve the community's response to the outbreak of viral diseases. Their latest [data and analysis page](https://nextstrain.org/ncov/global) contains a dashboard that analyzes and displays the Genetic epidemiology of the novel coronavirus. The main visualization shows the phylogeny (evolutionary history) of the virus, which can be displayed globally and by country.
 
 ### Why is it important?
 Data visualization in general is an extremely powerful tool that allows for increased comprehension of data analysis, since you don't (usually) need to have scientific/statistical background to understand what is happening in a picture. Furthermore, by visualizing the data in a multitude of ways (similar to the different tree options on the NextStrain dashboard) more relationships/correlations/insights can be found at the click of a button. The Next Strain data visualization dashboard allows users to view how pathogens change over time in a plethora of ways, enabling people everywhere to see and try to understand how viruses  evolve.
@@ -39,7 +39,7 @@ Data visualization in general is an extremely powerful tool that allows for incr
 ### Other cool things/facts:
 - This project is made possible using data from GISAID!
 - The dashboard provides analysis for 10 different pathogens, including ebola, ncov (novel coronavirus), and zika.
-- Nextstrain provides an open-source toolkit that allows anyone to create visualizations like the ones that are seen on the dashboard.
+- Next Strain provides an open-source toolkit that allows anyone to create visualizations like the ones that are seen on the dashboard.
 
 
 
