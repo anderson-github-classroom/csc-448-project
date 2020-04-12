@@ -41,6 +41,28 @@ Data visualization in general is an extremely powerful tool that allows for incr
 - The dashboard provides analysis for 10 different pathogens, including ebola, ncov (novel coronavirus), and zika.
 - Next Strain provides an open-source toolkit that allows anyone to create visualizations like the ones that are seen on the dashboard.
 
+## [Complete Genome Sequence of a 2019 Novel Coronavirus (SARS-CoV-2) Strain Isolated in Nepal](https://mra.asm.org/content/9/11/e00169-20)
+### What is it?
+The resource listed above is a link to an article by the American Society for Microbiology that contains the complete genome sequence of a COVID-19 strain isolated in Nepal. The sequence was obtained via an oropharyngeal swab specimen of a 32 year-old Nepalese student with coronavirus disease 2019 (COVID-19), who had returned to Nepal after traveling to Wuhan, China. The student tested positive by real-time reverse transcriptase PCR developed by the University of Hong Kong. Full genome comparison revealed that there was a >99.99% match with two previously sequenced genomes from GenBank. The SARS-CoV-2 genome contains a single, positive-stranded RNA that is 29,811 nucleotides long, being 29.86% adenosines, 18.39% cytosines, 19.63% guanines, and 32.12% thymines.
+
+### Why is it important?
+The article and its findings are extremely important to the bioinformatics and scientific community. It provides a complete genome sequence of the COVID-19 virus, which verifies previous findings and allows for scientists and bioinformaticians alike to start analyzing the genome.
+
+### Other cool things/facts:
+- The patient was a 32 year-old Nepalese man who attended the Wuhan University of Technology as a student.  
+- His symptoms were cough, mild fever, and throat congestion.
+
+## [Best practices for the analysis of SARS-CoV-2 data: Genomics, Evolution, and Cheminformatics](https://covid19.galaxyproject.org/)
+### What is it?
+
+### Why is it important?
+
+
+### Other cool things/facts:
+- 
+
+
+
 
 
 
