@@ -1,6 +1,6 @@
 ---
 title: Sarah Kurdoghlian
-description: "CSC 448 Bioinformatics Algorithms Project\nWe will be researching and analyzing the latest novel coronavirus data on a weekly basis as a part of CSC 448 Bioinformatics Algorithms at Cal Poly. The goal is to aggregate bioinformatic analysis of COVID-19."
+description: "CSC 448 Bioinformatics Algorithms Project | The goal is to aggregate bioinformatic analysis of COVID-19. We will be researching and analyzing the latest novel coronavirus data on a weekly basis as a part of CSC 448 Bioinformatics Algorithms at Cal Poly."
 permalink: /skurdogh/
 ---
 
@@ -90,3 +90,14 @@ An initiative to promote the international sharing of influenza virus sequences 
 #### **Analysis**
 - Public data on GISAID of the hCoV-19 genome sequence was used by Nextstrain, mentioned above, to build [this phylogenic tree](https://www.gisaid.org/epiflu-applications/next-hcov-19-app/).
 - If you register on the site and agree to uphold GISAID data usage rules, you can have access to all the genome sequence data submitted by labratories.
+
+---
+
+### 6) [Johns Hopkins CSSE Data Repository for COVID-19](https://github.com/CSSEGISandData/COVID-19)
+#### **Overview**
+Johns Hopkins has designed a [visual dashboard](https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6) to display COVID-19 data in an interactive web-based interface. 
+
+#### **Analysis**
+__I recommend this dashboard__ because the information displayed is real-time, essential pandemic statistics. The general public wants this data in a quick, readable format. The dashboard is **easy to read** and displays **information on one screen** including total cases, cases by region, total deaths, total recovered, and a world map
+
+Their [data repository](https://github.com/CSSEGISandData/COVID-19) is publicly available on GitHub.
