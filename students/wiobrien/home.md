@@ -7,12 +7,12 @@ excerpt: "CSC 448 Bioinformatics Algorithms Project"
 ## The GISAID Initiative
 ### https://www.gisaid.org/about-us/mission/
 
-GISAID is a non-profit initiative recognized by the European Commission as a parter in the PREDEMICS (Prepardness, Prediction and the Prevention of Emerging Zoonotic Viruses with PAndemic Potential) consortium. As such, their research regarding COVID19 has been multinational and exhaustive. A number of the following sources utilize GISAID data in their own analysis, emphasizing its importance in the field of bio-informatics.
+GISAID is a non-profit initiative recognized by the European Commission as a parter in the PREDEMICS (Prepardness, Prediction and the Prevention of Emerging Zoonotic Viruses with Pandemic Potential) consortium. As such, their research regarding COVID19 has been multinational and exhaustive. A number of the following sources utilize GISAID data in their own analysis, emphasizing its importance in the field of bio-informatics. At the time of writing, they have a total of 8,001 genomes sequenced regarding hCoV-19. Unlike conventional archives, after curation, genome sequences are released to the public immediately. 
 
 ## Folding @ Home Project
 ### https://foldingathome.org/
 
-The Folding @ Home Project is based in St. Louis at the Washington University in St. Louis School of Medicine. Their research investigates the protein folds in human cells which are integral to ensuring proper cell functionality. Misfolds in this proteins can result in serious alterations of functionality, possibly introducing serious health complications. Users can donate their own computing power to the research of these folds by visiting the URL above.
+The Folding @ Home Project is based in St. Louis at the Washington University in St. Louis School of Medicine. Their research investigates the protein folds in human cells which are integral to ensuring proper cell functionality. Misfolds in these proteins can result in serious alterations of functionality, possibly introducing serious health complications. Regaring COVID19, Folding @ Home is using computer simulations to understand the viral proteins found in instances of COVID19. Users can donate their own computing power to the research of these folds by visiting the URL above. 
 
 ## Next Strain
 ### https://nextstrain.org/ncov
