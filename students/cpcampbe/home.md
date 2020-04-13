@@ -1,6 +1,6 @@
 ---
 permalink: /cpcampbe/
-title: "PUT YOUR NAME HERE"
+title: "Chelsea Rose Campbell"
 excerpt: "CSC 448 Bioinformatics Algorithms Project"
 ---
 
