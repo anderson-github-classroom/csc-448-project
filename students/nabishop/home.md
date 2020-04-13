@@ -4,7 +4,7 @@ title: "Nicholas Bishop"
 excerpt: "CSC 448 Bioinformatics Algorithms Project"
 ---
 
-## Introduction
+# Introduction
 The following page is an attempt to help the cause of understanding and curing the COVID-19 virus that is currently sweeping the world. Each project section of the focus of a given week, with some being more focused on synthesizing data and research and others being focused on using algorithms to make more in-depth conclusions. Both approaches attempt at helping the medical field for fighting COVID-19.
 
 ## Project 1
