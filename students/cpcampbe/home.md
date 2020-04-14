@@ -28,10 +28,28 @@ A review of some current available resources.
    They have customizable and filterable graphs, charts and animations that show data regarding the specifics about nCoV's phylogeny, transmissions, and diversity. There are written reports to explain the data displayed in these visuals. These efforts help scientists and researchers understand how COVID-19 behaves to facilitate their studies of the virus.    
 
 ### [ASM's Complete Genome Sequence of a 2019 Novel Coronavirus (SARS-CoV-2) Strain Isolated in Nepal](https://mra.asm.org/content/9/11/e00169-20)
-
-#### COVID-19
-
+   This is a study published by the American Society for Microbiology in their Microbiology Resource Announcements. It shows and analyzes a complete genome sequence obtained for a SARS-CoV-2 strain isolated from a patient from Nepal with COVID-19. This 32-year-old man had returned to Nepal from a trip to Wuhan, China. 
+   The report explains the process in which the patient was diagnosed and how the genome sequence was obtained. It covers background information about SARS-CoV-2 such as its geographical origins and phylogeny. Pattens in the genome are analyzed and compared to other types of genomes. Any mutations in the genome are identified and discussed. It provides a table with the gene-specific and probe sequences used. 
 
 ## [COVID-19 Analysis: The Galaxy Project](https://covid19.galaxyproject.org/)
-
-Put your content here
+   This resource provides tools and digital infrastructure to enable the public to virually analyze SARS-CoV-2 data. They have features to conduct three of the best practices for analyzing this virus: Genomics, Evolution, and Cheminformatics.
+   Each of these analysis sections are constantly updated as new data is shared. More information about what these three practices entail is as follows:
+- Genomics: Assembly and intra-host variation
+  - Assembly
+  - MRCA timing
+  - Variation analysis
+  - Selection and recombination
+- Evolution: Sites under selection
+  - Natural Selection Analysis
+  - Analysis
+  - Visualizations
+  - Observable Notebooks
+- Cheminformatics: Screening of the main protease
+  - Compound enumeration
+  - Generation of 3D conformations
+  - Docking 
+  - Scoring
+  - Selection of compounds for synthesis
+These analyses are available to expand the research that is occurring and spread awareness and knowledge about the SARS-CoV-2 virus. 
+  
+## **Week 2**
