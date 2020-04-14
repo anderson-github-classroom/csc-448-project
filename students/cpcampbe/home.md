@@ -50,6 +50,6 @@ A review of some current available resources.
   - Docking 
   - Scoring
   - Selection of compounds for synthesis
-These analyses are available to expand the research that is occurring and spread awareness and knowledge about the SARS-CoV-2 virus. 
+   These analyses are available to expand the research that is occurring and spread awareness and knowledge about the SARS-CoV-2 virus. 
   
 ## **Week 2**
