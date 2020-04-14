@@ -1,3 +1,9 @@
+---
+permalink: /lepopal/
+title: "Lemar Popal"
+excerpt: "CSC 448 Bioinformatics Algorithms Project"
+---
+
 # Lemar Popal
 
 ## Week 1
