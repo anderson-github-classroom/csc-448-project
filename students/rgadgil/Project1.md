@@ -1,9 +1,17 @@
 ---
-permalink: /rgadgil/
-title: Richa Gadgil
-excerpt: "CSC 448 Bioinformatics Algorithms Project"
+jupyter:
+  jupytext:
+    formats: ipynb,md,py
+    text_representation:
+      extension: .md
+      format_name: markdown
+      format_version: '1.2'
+      jupytext_version: 1.4.2
+  kernelspec:
+    display_name: Python 3
+    language: python
+    name: python3
 ---
-
 
 ## Project Part 1 (a.k.a. Project 1 on Schedule)
 We don't know enough bioinformatics yet, but we can start the project by cleaning up and improving your individual websites. For Project 1, I want you to read and summarize/synthesize/discuss the following links on your own pages within the main project repo. This is definitely less of a "for grade" assignment. There is a pandemic, and I believe we can contribute meaningful bioinformatics analysis. That starts with a review of currently available resources. Please use my links as a starting point, but post more links on Slack for others. Find more links. Together we can make a contribution. Here are the links that you should investigate at a minimum.
@@ -54,3 +62,7 @@ This site contains existing open-source research and infrastructure built on the
 https://covidtracking.com/api
     
 This is an API endpoint I found where we can ping for COVID-19 data directly instead of having to rely on scraping, imports, etc. 
+
+```python
+
+```
