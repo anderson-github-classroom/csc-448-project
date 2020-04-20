@@ -23,3 +23,5 @@ Nextstrain processes GISAID's huge list of virus sequences and organizes them in
 Folding at Home is a project that collects the idle processing power of individuals worldwide. Folding at home is currently dedicated to simulating the interactions of hCoV-19 with other molecules to better understand how the virus behaves. Start folding today!
 
 # [SARS-CoV-2 Analysis Best Practices](https://covid19.galaxyproject.org/)
+
+# [My current Exploration into edit distance and COVID-19](/csc-448-project/sfrazee/Project2.ipynb)
