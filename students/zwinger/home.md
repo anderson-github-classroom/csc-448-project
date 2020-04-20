@@ -25,3 +25,6 @@ The Galaxy Project's goal is to provide public access to infrastructure and work
 # Week 2
 My notebook containing my work for project 2 can be found [here](Project2.ipynb)
 <a href="https://nbviewer.jupyter.org/github/anderson-github-classroom/csc-448-project/blob/master/students/zwinger/Project2.ipynb">test</a>.
+
+https://nbviewer.jupyter.org/github/anderson-github-classroom/csc-448-project/blob/master/students/zwinger/Project2.ipynb
+https://nbviewer.jupyter.org/github/anderson-github-classroom/csc-448-project/blob/master/students/acengel/Project2.ipynb
