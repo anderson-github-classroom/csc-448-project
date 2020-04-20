@@ -16,22 +16,27 @@ jupyter:
 ## Project 2
 
 
-### Guidance (i.e., what you should do)
-We've said many times. This project isn't about everyone reaching the same point in a predetermined set of steps. It's about applying what we are learning in class to produce real data analysis for the community. It is about as *Learn by doing* as you could possibly get at Cal Poly. So what should you be doing this week for the project? Here is some guidance (but remember this is only to guide you and not box you into specific tasks). They are in no particular order. 
-* Consider what questions we want to ask from our evolutionary tree analysis. Think about what questions the book was trying to answer. Do we even have the data in this notebook to answer some of those questions? If not, spend time trying to find it now that you can know more about what to look for in terms of format. Do some literature searching and see what other work has been done for this virus and others.
-* Research and try different evolutionary tree programs/frameworks. What I've done below is not the only game in town by far. Biopython itself has different options.
-* Consider the alignment itself. Are there different ways to do this? Did we do it correctly?
-* What about the sequences themselves? Are they all of the same quality? Should we exclude some?
-* What about the virus alignment program? Did we use that correctly? Should we have done the entire sequence instead of using Spike as a reference? Should we try a different reference. 
-* Do we have more data available about the sequences? Part of world, etc. Can we do some digging here to answer different questions.
-* And I'm sure you can think of more to attempt... Think about what you want to do. Spend time working towards a well thoughtout goal. Document things as you go. Talk to everyone on Slack. Together we can do this!
+For my analysis, I kept it simple, and decided to dive further into the given alignment data. 
+Specifically, I analyzed four sets of aligned sequences, in decreasing order of distance to the 
+concensus sequence.
 
 
-### Read the data into a pandas dataframe
+
+### Imports
 
 ```python
+!pip install biopython
+import numpy as np
+from Bio.Phylo.TreeConstruction import DistanceMatrix
+from Bio.Phylo.TreeConstruction import DistanceTreeConstructor
+from Bio import Phylo
 import pandas as pd
-position_table = pd.read_csv('../../data/position_table.csv') # or put in the path to csc-448-project/data/position_table.csv
+```
+
+### Loading the given data from the position table
+
+```python
+position_table = pd.read_csv('../../data/position_table.csv')
 ```
 
 ```python
@@ -62,54 +67,81 @@ distance_from_concensus_seq_sorted = distance_from_concensus_seq.sort_values(asc
 distance_from_concensus_seq_sorted
 ```
 
-### Select 10 sequences to do our first analysis
+### Select Sets of sequences
+
+
+Here I break from the outline, and I pull out four sets of distance data from the sorted list.
+All the following analysis will be in order of decreasing distance from the concensus sequence, since
+that is how the data is sorted.
+
+I also decided to look at the data in groups of eight instead of ten, since that will allow us to see the graphs better
 
 ```python
-subset_seqs = distance_from_concensus_seq_sorted[:10].index
+subset_seqs = []
+for i in range(0, 32, 8):
+    subset_seqs.append(distance_from_concensus_seq_sorted[i:i + 8].index)
 subset_seqs
 ```
 
-### Construct a distance matrix for our sequences
+### Calculate distances for each set of sequences
 
 ```python
-distances = {}
-for i,seqid1 in enumerate(subset_seqs):
-    distances[seqid1,seqid1]=0
-    for j in range(i+1,len(subset_seqs)):
-        seqid2 = subset_seqs[j]
-        distances[seqid1,seqid2] = sum(position_table.loc[seqid1] != position_table.loc[seqid2])
-        distances[seqid2,seqid1] = distances[seqid1,seqid2]
-distances = pd.Series(distances).unstack()
-distances
+def calc_distances(subset_seqs):
+    distances = {}
+    for i,seqid1 in enumerate(subset_seqs):
+        distances[seqid1,seqid1]=0
+        for j in range(i+1,len(subset_seqs)):
+            seqid2 = subset_seqs[j]
+            distances[seqid1,seqid2] = sum(position_table.loc[seqid1] != position_table.loc[seqid2])
+            distances[seqid2,seqid1] = distances[seqid1,seqid2]
+    distances = pd.Series(distances).unstack()
+    return distances
+    
+distance_sets = [calc_distances(sequence) for sequence in subset_seqs]
+distance_sets
 ```
 
-### Utilize biopython
-For this analysis we'll use a package called biopython: ``pip install biopython``. 
-
-It has its own formats, so we'll need to convert.
+As you can see, the distances from the concensus sequence drop off rapidly.
 
 ```python
-from Bio.Phylo.TreeConstruction import DistanceMatrix
-matrix = np.tril(distances.values).tolist()
-for i in range(len(matrix)):
-    matrix[i] = matrix[i][:i+1]
-dm = DistanceMatrix(list(distances.index), matrix)
+def create_matrix(distances):
+    matrix = np.tril(distances.values).tolist()
+    for i in range(len(matrix)):
+        matrix[i] = matrix[i][:i+1]
+    dm = DistanceMatrix(list(distances.index), matrix)
+    return dm
+matrixs = [create_matrix(distances) for distances in distance_sets]
+matrixs
 ```
 
-### Now construct our tree
+### Construct a tree for each distance matrix
 
 ```python
-from Bio.Phylo.TreeConstruction import DistanceTreeConstructor
-constructor = DistanceTreeConstructor()
-tree = constructor.nj(dm)
+def make_tree(dm):
+    constructor = DistanceTreeConstructor()
+    tree = constructor.nj(dm)
+    return tree
+
+trees = [make_tree(dm) for dm in matrixs]
+trees
 ```
 
-### Now draw our tree
+### Draw a tree for each matrix
 
 ```python
 %matplotlib inline
 
-from Bio import Phylo
-tree.ladderize()   # Flip branches so deeper clades are displayed at top
-Phylo.draw(tree)
+def draw_tree(tree):
+    tree.ladderize()
+    Phylo.draw(tree)
+
+for tree in trees:
+    draw_tree(tree)
+```
+
+This shows us visually that branch length drops off rapidly, with only the first few longest branches being 
+over 50 in length. After that point, branch length stays well below 10, and only continues to decrease.
+
+```python
+
 ```
