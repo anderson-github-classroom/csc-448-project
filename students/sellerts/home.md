@@ -3,6 +3,7 @@ permalink: /sellerts/
 title: Samuel Ellertson
 excerpt: "CSC 448 Bioinformatics Algorithms Project"
 ---
+## PROJECT 1
 
 ### A. Gisaid.org
 
@@ -24,4 +25,13 @@ This paper, published in the American Society of Microbiology, details how the r
 ### E. Covid19.GalaxyProject.org 
 
 The Galaxy Project is an open-source project with the goal of providing "publically accessible infrastructure and workflows for SARS-CoV-2 data analyses." It currently provides three different types of analysis: Genomics, Evolution, and Cheminformatics.
+
+## PROJECT 2
+
+[Link to notebook](Project2.ipynb)
+
+
+
+
+
 
