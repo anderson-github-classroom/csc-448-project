@@ -1,4 +1,4 @@
-!---
+---
 permalink: /zwinger/
 title: "Zachary Winger"
 excerpt: "CSC 448 Bioinformatics Algorithms Project"
