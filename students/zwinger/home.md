@@ -124,4 +124,4 @@ pars_tree = constructor.build_tree(aln)
 Phylo.draw(pars_tree)
 ```
 
-![Parsimony Tree](Images/Parsimony_tree.JPG)
+![Parsimony Tree](Images/Parsimony_Tree.JPG)
