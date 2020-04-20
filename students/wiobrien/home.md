@@ -33,7 +33,7 @@ The Galaxy Project analyzes data from GISAID in order to investigate the genomic
 # Week 2
 ## Relative Distance Analysis to Suggest Host of Transfer for COVID19
 
-The successing cells load data from the NCBI Nucleotide database as a means of investigating the likely host that humans initally obtained COVID19 from. With a relatively small sample size of host species we can identify how significant the edit distance between the sequenced human genome and the sequenced bat genome, further bolstering the current theory that COVID19 was originally transferred from bats to humans.
+The successing cells load data from the NCBI Nucleotide database as a means of investigating the likely host that humans initally obtained COVID19 from. With a relatively small sample size of host species we can identify how significant the edit distance between the sequenced human genome and the sequenced bat genome, further bolstering the current theory that COVID19 was originally transferred from bats to humans. The human sample selected was intentionally an instance of COVID19, the rest were selected arbitrarily with the only requirement that the data sample be representative of the entire genome.
 
 ### Data Collection
 I used a set amount of accessions from a varying source of hosts for my data set. The hosts were arbitrarily chosen from the NCBI nucleotide database.
@@ -76,7 +76,7 @@ D = pd.DataFrame(place_holder,index=host_names,columns=host_names)
 
 D
 ```
-![image](dm.png)
+
 
 The distances between nucleotides were computed using the python Levenshtein module. The standard Levenshtein distance algorithm was employed in this case. For large accession counts, this process can take a few minutes.
 
@@ -104,6 +104,7 @@ print(tri_dm)
 
 D
 ```
+![image](dm.png)
 
 Finally, I displayed the graph to showcase the evolutionary tree of the selected coronavirus sequences.
 
