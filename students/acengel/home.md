@@ -41,3 +41,7 @@ Galaxy Project is another site centered around sharing scientific data and compu
 They also list highlights they've found from these workflows.  I didn't understand much of this, but it seems they've sussed out the useful datasets, figured out a little more how it evolves, and identified some compounds that can inhibit the spread of the virus.
 
 From what I can tell, this site will be extremely useful.  They have lots of premade Jupyter notebooks and tools in the Anaconda cloud that I can use to load and analyze data.
+
+## Week 2
+
+I took at look at the COVID-19 genome with some phylogenetic trees.  Specifically, I wanted to investigate how the virus got to the US.  The notebook can be found <a href="https://nbviewer.jupyter.org/github/anderson-github-classroom/csc-448-project/blob/master/students/acengel/Project2.ipynb">here</a>.

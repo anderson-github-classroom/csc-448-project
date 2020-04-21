@@ -7,7 +7,7 @@ excerpt: "CSC 448 Bioinformatics Algorithms Project"
 # Introduction
 The following page is an attempt to help the cause of understanding and curing the COVID-19 virus that is currently sweeping the world. Each project section of the focus of a given week, with some being more focused on synthesizing data and research and others being focused on using algorithms to make more in-depth conclusions. Both approaches attempt at helping the medical field for fighting COVID-19.
 
-## Project 1
+## I. Week 1
 For the first week of the project, I will review several available resources which discuss and analyze the COVID-19 virus. Each subsequent section will break down a given source, with of course, credit to where the information came from.
 
 ### GISAID
@@ -34,3 +34,7 @@ The article can be found at https://mra.asm.org/content/9/11/e00169-20
 Using Galaxy, an open platform for genome computation research, and BioConda, an Anaconda package manager that specializes in bioinformatics technology, analysis was done on COVID-19, specifically regarding the virus’s genome and evolution. Current genome research includes documenting the virus’s makeup and intrahost variation using 33 publicly available samples. Data used in analyzing the evolution of the virus has narrowed down five potential genomic positions that may be a location for positive or negative selection, which is incredibly important for understanding the adaptations of COVID-19. 
 
 The COVID-19 analysis can be found at https://covid19.galaxyproject.org/
+
+
+## II. Week 2
+This week I will construct Phylogenetic trees to analyze Covid-19. Phylogenetic trees are great for tracing the evolution of a virus, like where it came from, what animal gave us it, and how the virus has changed over time. You can find my analysis for this week  <a href="https://nbviewer.jupyter.org/github/anderson-github-classroom/csc-448-project/blob/master/students/nabishop/week_2.ipynb">here</a>.

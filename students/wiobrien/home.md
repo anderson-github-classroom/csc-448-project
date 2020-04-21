@@ -4,6 +4,7 @@ title: "William O'Brien"
 excerpt: "CSC 448 Bioinformatics Algorithms Project"
 ---
 
+# Week 1
 ## The GISAID Initiative
 ### https://www.gisaid.org/about-us/mission/
 
@@ -28,3 +29,100 @@ A complete genome sequence of an instance of COVID-19 can be viewed from the dat
 ### https://covid19.galaxyproject.org/
 
 The Galaxy Project analyzes data from GISAID in order to investigate the genomics, evolution, and cheminformatics of COVID-19. The site uses open-source data-science tools to provide easily-modifiable templates and workflows for analysis on each of the fields above. These templates can be downloaded and modified easily, making best-practice tools available for public use.
+
+# Week 2
+## Relative Distance Analysis to Suggest Host of Transfer for COVID19
+
+The successing cells load data from the NCBI Nucleotide database as a means of investigating the likely host that humans initally obtained COVID19 from. With a relatively small sample size of host species we can identify how significant the edit distance between the sequenced human genome and the sequenced bat genome, further bolstering the current theory that COVID19 was originally transferred from bats to humans. The human sample selected was intentionally an instance of COVID19, the rest were selected arbitrarily with the only requirement that the data sample be representative of the entire genome.
+
+### Data Collection
+I used a set amount of accessions from a varying source of hosts for my data set. The hosts were arbitrarily chosen from the NCBI nucleotide database.
+
+```python
+accessions = ["1798174254", "MN996532","NC_002306","KY566211" 
+              ,"JF792617", "KM454473", "NC_017083", "KR061459","KF294357", 
+              "NC_003045", "LN610099", "MH021175", "KF268339",
+             "NC_003436"]
+host_names = ["human", "bat", "feline", "feline2", 
+              "rat", "duck", "rabbit", "swine", "mouse", 
+              "bovine", "guinea fowl", "avial (Brazil)", "murine",
+             "porcine"]
+```
+
+### Data Source
+I used the Entrez subset of the Bio module for data collection. I used the nucleotide DB within the NCBI database list to obtain full nucleotide sequences of the above accessions.
+
+```python
+from Bio import Entrez
+from Bio import SeqIO
+handle = Entrez.efetch(db="nucleotide", id=accessions, rettype="gb", retmode="xml")
+
+record = Entrez.read(handle)
+
+handle.close()
+
+```
+
+
+This data was then placed into a blank pandas DataFrame in a 2D matrix.
+
+```python
+import pandas as pd
+place_holder = []
+for i in range (len(host_names)):
+    place_holder.append([0 for j in range(len(host_names))])
+print(place_holder)
+D = pd.DataFrame(place_holder,index=host_names,columns=host_names)
+
+D
+```
+
+
+The distances between nucleotides were computed using the python Levenshtein module. The standard Levenshtein distance algorithm was employed in this case. For large accession counts, this process can take a few minutes.
+
+```python
+from Levenshtein import *
+
+for name_a in host_names:
+    for name_b in host_names:  
+        if name_a == name_b:
+            continue
+        if D[name_a][name_b] != 0 or D[name_b][name_a]:
+            continue
+        dist = distance(sequences[name_a], sequences[name_b])
+        D.set_value(name_b,name_a, dist)
+
+
+
+# Create a lower-triangular matrix
+j = 0
+as_num = D.to_numpy().tolist()
+tri_dm = []
+for j in range(len(as_num)):
+    tri_dm.append(as_num[j][0: j + 1])
+print(tri_dm)
+
+D
+```
+![image](dm.png)
+
+Finally, I displayed the graph to showcase the evolutionary tree of the selected coronavirus sequences.
+
+```python
+%matplotlib inline
+
+from Bio.Phylo.TreeConstruction import DistanceTreeConstructor, DistanceMatrix
+from Bio import Phylo
+constructor = DistanceTreeConstructor()
+tree = constructor.nj(DistanceMatrix(names=host_names, matrix=tri_dm))
+tree.ladderize() 
+Phylo.draw(tree)
+```
+
+![image](wk2tree.png)
+
+### Analysis
+As you can see, the human and bat genomes feature a statistically significant lack of variation relative to the other coronavirus sequences selected. This claim is bolstered by the distance matrix as well which showcases just how similar the two host sequences are. The current theory on the transmissin of COVID19 suggests that the virus was first contracted by humans through contact with bats. This very simple demonstration reaches a similar conclusion, albeit with a relatively small sample size.
+
+### Room for Improvement
+There is ample room for improvement in this particular analysis. For starters, relatively few accessions were selected. A better approach would be to take a large, random sample from the set of hosts in the NCBI database that have entire coronavirus genomes sequenced. Additionally, sequencing and analyzing the entire genome may take into account insignificant variation that could otherwise be filtered by analyzing particular proteins. This introduces additional challenges, however, such as ensuring that each host has the same protein sequenced. Either way, this basic research covers a lot of the tools for analysis and data collection that will prove useful in the further analysis of COVID19 and future coronaviruses.

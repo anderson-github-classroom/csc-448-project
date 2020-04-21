@@ -4,11 +4,19 @@ title: "McClane Howland"
 excerpt: "CSC 448 Bioinformatics Algorithms Project"
 ---
 
+[This paper](https://www.nature.com/articles/s41591-020-0820-9) explains three possible theories for the origin of the SARS-CoV-2 virus. In short, they are:
 
-# [GISAID](https://www.gisaid.org/)
+1. Natural selection in an animal host before zoonotic transfer
+2. Natural selection in humans following zoonotic transfer
+3. Selection during passage
+
+Regarding hypothesis 2, the authors suggest that
+> Studies of banked human samples could provide information on whether such cryptic spread has occurred.
+Theories 1 and 2  also necessitate that either an animal or human virus ancestor would have a polybasic cleavage site, as does the SARS-CoV-2 virus. Existing databases of influenza viruses, [GISAID](https://www.gisaid.org/), and of coronaviruses, [CoVDB](http://covdb.popgenetics.net/v2/) could be searched for viruses that contain a polybasic cleavage site. The paper specifies the location of the cleavage site in the S protein.
 
 Platform dedicated to sharing flu virus genomes. For example, [this paper](https://mra.asm.org/content/9/11/e00169-20) used a reference sequence from GISAID and uploaded their sequence to GISAID after.
 
+# Old stuff
 
 # [Nextstrain](https://nextstrain.org/)
 
