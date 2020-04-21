@@ -37,4 +37,6 @@ This goal of this site is to "provide publicly accessible infrastructure and wor
 TODO: Create a phylogenetic tree, don't have to analyze yet.
 
 
-Test to see if relative linking works: [Getting Data](GettingData.md)
+Here is a notebook where I download all the Covid-19 sequence files from the NCBI database: [Getting Data](GettingData.md)
+
+## Week 2
