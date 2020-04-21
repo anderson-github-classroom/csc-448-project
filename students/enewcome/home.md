@@ -86,7 +86,7 @@ This project, as well as the other tools provided by Galaxy, allows everybody to
 ---
 
 # Project 2
-Whenever there is a outbreak due to a new virus, scientists and researchers must determine where the virus came from, when it appeared, and how it was transmitted. To do this, they use evolutionary trees, or phylogenies. For this week's project, I wanted to construct phylogenies to answer the following questions: **What is the variation in the most uncommon sequences in the most affected countries?** The data analysis and phylogenetic trees can be found [here](../Project2.ipynb).
+Whenever there is a outbreak due to a new virus, scientists and researchers must determine where the virus came from, when it appeared, and how it was transmitted. To do this, they use evolutionary trees, or phylogenies. For this week's project, I wanted to construct phylogenies to answer the following questions: **What is the variation in the most uncommon sequences in the most affected countries?** The data analysis and phylogenetic trees can be found [here](./Project2.ipynb).
 
 
 
@@ -94,7 +94,3 @@ Whenever there is a outbreak due to a new virus, scientists and researchers must
 
 
 
-
-```python
-
-```
