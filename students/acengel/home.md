@@ -44,4 +44,4 @@ From what I can tell, this site will be extremely useful.  They have lots of pre
 
 ## Week 2
 
-I took at look at the COVID-19 genome with some phylogenetic trees.  Specifically, I wanted to investigate how the virus got to the US.  The notebook can be found <a href="https://nbviewer.jupyter.org/github/anderson-github-classroom/csc-448-project/blob/master/students/acengel/Project2.ipynb">here</a>
+I took at look at the COVID-19 genome with some phylogenetic trees.  Specifically, I wanted to investigate how the virus got to the US.  The notebook can be found <a href="https://nbviewer.jupyter.org/github/anderson-github-classroom/csc-448-project/blob/master/students/acengel/Project2.ipynb">here</a>.
