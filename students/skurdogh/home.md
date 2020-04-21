@@ -112,9 +112,11 @@ Their [data repository](https://github.com/CSSEGISandData/COVID-19) is publicly 
 ---
 
 # Week 2
-This week, are studying phylogenic trees. I gathered recent SARS-CoV-2 genomic sequence data from the GISAID website; 10 recent sequences from both the US and China. By building a phylogenic tree, I wanted to see how much variation there was in the sequences when compared to a  [SARS-CoV-2 Spike protein reference sequence](https://github.com/rega-cev/virulign/blob/master/references/SARS-CoV-2/S.xml) in the [virulign package](https://github.com/rega-cev/virulign).
+This week, we are studying phylogenic trees. I gathered recent SARS-CoV-2 genomic sequence data from the GISAID website; 10 recent sequences from both the US and China. By building a phylogenic tree, I wanted to see how much variation there was in current sequences when compared to a  [SARS-CoV-2 Spike protein reference sequence](https://github.com/rega-cev/virulign/blob/master/references/SARS-CoV-2/S.xml) in the [virulign package](https://github.com/rega-cev/virulign).
 
 [Here is my jupyter notebook](https://nbviewer.jupyter.org/github/sarahkurd/bioinformatics-sample-code/blob/master/Project2-Comparing-Phylogeny-of%20-2-Countries.ipynb)
+
+I explain how to use virulign to align the target sequences with the reference. China, US, and combined data is put into respective dataframes. These dataframes are used to create a distance matrix, where distance of a sequence is the total number of nucleotides that differ from the reference sequence.
 
 I thought I would find more variaton in the sequences between China and the US, and was thinking that the US might have a more diverse distance matrix. But, my phylogenic trees show that recent submissions of SARS-CoV-2 sequences in both China and the US have about a 0-2 nucledotide distance from the reference coronavirus sequence.
 
