@@ -37,6 +37,8 @@ This goal of this site is to "provide publicly accessible infrastructure and wor
 TODO: Create a phylogenetic tree, don't have to analyze yet.
 
 
-Here is a notebook where I download all the Covid-19 sequence files from the NCBI database: [Getting Data](GettingData.md)
+Here is a notebook (.md) where I download all the Covid-19 sequence files from the NCBI database: [Getting Data](GettingData.md).
+
+Here is the same notebook but with a .html extension: [Getting Data](GettingData.html).
 
 ## Week 2
