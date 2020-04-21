@@ -83,6 +83,10 @@ This project, as well as the other tools provided by Galaxy, allows everybody to
 - At present, ~5 genomic positions may merit further investigation because they may be subject to diversifying positive selection. (Evolution section)
 - 40,000 compounds were considered to be likely to bind, and were chosen based on recently published X-ray crystal structures; 500 high scoring compounds were identified. (Cheminformatics section)
 
+---
+
+# Project 2
+Whenever there is a outbreak due to a new virus, scientists and researchers must determine where the virus came from, when it appeared, and how it was transmitted. To do this, they use evolutionary trees, or phylogenies. For this week's project, I wanted to construct phylogenies to answer the following questions: **What is the variation in the most uncommon sequences in the most affected countries?** The data analysis and phylogenetic trees can be found [here](../Project2.ipynb).
 
 
 
@@ -90,3 +94,7 @@ This project, as well as the other tools provided by Galaxy, allows everybody to
 
 
 
+
+```python
+
+```
