@@ -155,7 +155,9 @@ Phylo.draw_ascii(tree)
     
 
 
-Though the spike proteins aren't a terrible match, the whole genomes of this murine coronavirus and the SARS-CoV-2 virus are pretty different.
+## Not very useful
+
+Though the spike proteins aren't a terrible match, the whole genomes of this murine coronavirus and the SARS-CoV-2 virus are pretty different. I highly doubt the murine coronavirus is an ancestor of the current outbreak.
 
 # Old Project 1 stuff
 
@@ -180,8 +182,3 @@ A massive distributed computing project using volunteer computers to simulate pr
 A project from Google that tries to predict the shape of a protein from its amino acid sequence. The method is described by Google below:
 
 "In this work, we show that we can train a neural network to accurately predict the distances between pairs of residues in a protein which convey more about structure than contact predictions. With this information we construct a potential of mean force that can accurately describe the shape of a protein. We find that the resulting potential can be optimised by a simple gradient descent algorithm, to realise structures without the need for complex sampling procedures."
-
-
-```python
-
-```
