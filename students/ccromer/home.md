@@ -4,8 +4,6 @@ title: "Carter Cromer"
 excerpt: "CSC 448 Bioinformatics Algorithms Project"
 ---
 
-Put your content here
-
 ## [GISAID Initiative](https://www.gisaid.org/)
 
 The GSAID Initiative (Global Initiative on Sharing All Influenza Data) is a non-profit that promotes the sharing of virus sequences and related data. They believe it is critically important for this information to be shared freely and made available internationally.
