@@ -194,7 +194,7 @@ This is a really simple measure of similarity between the sequences and offers a
 
 The Damerau-Levenshtein distance is metric that is more specifically build for nucleotide comparison purposes. DL distance operations are insertion, deletion, tranposition, and substitution, all of which matches up with how genome mutate (also happens to do it on the same time scale as well). This is a good standard to compare all other metrics up against because it is capable of capturing both similarity as well as time it took for the genome to mutate. 
 
-This computation has already been ran. Check section two above. 
+![]("https://raw.githubusercontent.com/anderson-github-classroom/csc-448-project/master/students/bfkwong/dl.png)
 
 ### C. Jaccard Distance 
 
