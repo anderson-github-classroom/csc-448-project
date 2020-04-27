@@ -3,6 +3,7 @@ permalink: /ncpalmie/
 title: Nathan Palmiero
 excerpt: "CSC 448 Bioinformatics Algorithms Project"
 ---
+## Week 1
 
 # GISAID (Global Initiative on Sharing All Influenza Data)
 
@@ -27,3 +28,7 @@ This resource provides an aggregation of tools, analyses, datasets, and best pra
 # COVID-19 Data Repository by Johns Hopkins CSSE
 
 This GitHub repository is managed by the CSSE team at John Hopkins and provides a collection of datasets and information on the coronavirus from governments and organizations all around the world. Many coronavirus trackers and dashboards are pulling their information from this repo currently.
+
+## Week 2
+
+My project part two analysis is in [this notebook.](https://nbviewer.jupyter.org/github/anderson-github-classroom/csc-448-project/blob/master/students/ncpalmie/Project2.ipynb)
