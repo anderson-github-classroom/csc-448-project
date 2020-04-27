@@ -126,3 +126,70 @@ As you can see, the human and bat genomes feature a statistically significant la
 
 ### Room for Improvement
 There is ample room for improvement in this particular analysis. For starters, relatively few accessions were selected. A better approach would be to take a large, random sample from the set of hosts in the NCBI database that have entire coronavirus genomes sequenced. Additionally, sequencing and analyzing the entire genome may take into account insignificant variation that could otherwise be filtered by analyzing particular proteins. This introduces additional challenges, however, such as ensuring that each host has the same protein sequenced. Either way, this basic research covers a lot of the tools for analysis and data collection that will prove useful in the further analysis of COVID19 and future coronaviruses.
+
+# Week 3
+## Graphical Mapping of Relative Edit Distances
+For this week's advancement to my project, I implemented a few python modules to present the relative edit distances of nucleotide sequences on a globe map using OpenStreetMap with pins colored based on their relative edit distances. More specifically, each color is associated with one set of siblings in the produced distance tree. Each point is then mapped based on the country of sampling in the NCBI database. Note that some of these samples were only specific to a particular country, so differentiating between large amounts of samples from "China" or "Italy" will require significantly more work. The Geopy module was used to find the coordinates of locations based upon the strings used to describe their locations in each NCBI entry. Often this was only a country, so one point may represent more than one data point. More work is required to support more colors and provide more clarity on what each dot represents, but this serves as a very basic template for future improvements.
+
+### Assignment of Colors by Parent
+
+```python
+unique_parents = {}
+all_colors = [
+    'red',
+    'blue',
+    'gray',
+    'darkred',
+    'lightred',
+    'orange',
+    'beige',
+    'green',
+    'darkgreen',
+    'lightgreen',
+    'darkblue',
+    'lightblue',
+    'purple',
+    'darkpurple',
+    'pink',
+    'cadetblue',
+    'lightgray',
+    'black'
+]
+
+leaves = tree.get_terminals()
+for leaf in leaves:
+    parent = tree.get_path(leaf)[-2]
+    if not parent in unique_parents:
+        if len(all_colors) == 0:
+            break
+        unique_parents[parent] = all_colors.pop()
+        
+    for r in locations:
+        if r["host"][0:35] == str(leaf)[0:35]:
+            r["color"] = unique_parents[parent]
+            break
+locations
+```
+
+The above code colors the samples by their parent, samples with the same parent will receive the same coloration as their siblings. This is by computing a path to each leaf in the tree and grabbing the second to last node in this path. From this, colors are assigned from a list of default, supported colors for the pybio module. In the future I plan to add support to color more samples based on hex values.
+
+```python
+# Folium portion of the code
+import folium
+
+map2 = folium.Map()
+
+for entry in locations:
+    print(entry)
+    if "color" in entry:
+        folium.Marker(entry["location"],popup=entry["host"],
+                     icon=folium.Icon(color=entry["color"])).add_to(map2)
+
+map2
+```
+
+This code creates the map seen below. The map is interactable and each dot has a label that describes the title of the original sample. The coloring is done based off its relative lineage in the tree. Again, lots of improvements can be made to this and with better data and location information a more impressive presentation can be made.
+
+![image](wk3map.png)
+
+
