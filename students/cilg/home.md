@@ -3,6 +3,8 @@ permalink: /cilg/
 title: "Bart Ilg"
 excerpt: "CSC 448 Bioinformatics Algorithms Project"
 ---
+Week 1
+------
 
 GISAID
 ------
@@ -28,3 +30,8 @@ Galaxy Project
 --------------
 Galaxy Project provides many resources to help research COVID-19, ranging from data on its genome, to evolutionary data. With this information researchers can try to determine how it behaves, and when it has evolved to adapt to new environments.
 --------------
+
+Week 2
+------
+When I began working on part 2 of the project, I was unsure what to do, so I decided to experiment with the software virulign. Virulign, can be found at https://github.com/rega-cev/virulign . I sought to test virulign by comparing their provided SARS-CoV-2 Genome to another copy of the genome. SARS-CoV-2 is the name of the virus itself, while COVID-19 is the name of the disease it causes. The other copy I decided to compare it to was provided by Galaxy Project. Galaxy project's COVID-19 Genome can be found here:  https://covid19.galaxyproject.org/genomics/4-Variation/current_complete_ncov_genomes.fasta . The interesting thing that I found, was that one part of the sequence had an error. I'm interested to see what this could mean, and intend to look further into it during week 3. Could one of the sequences be wrong? If thats the case, I wonder if there are researchers out there using incorrect data. COuld this be a difference between 2 strains? I have heard that there is supposed to be a stronger and weaker strain of the virus. Could it be an issue with virulign? If so, are there more accurate alternatives out there? I intend to find out why this happened, and further expand upon the issue during week 3.
+------
