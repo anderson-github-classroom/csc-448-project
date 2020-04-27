@@ -18,27 +18,16 @@ jupyter:
 This Part of the Project will use the complete COVID-19 Genome. This genome was provided by the galaxy project, and can be found here: https://covid19.galaxyproject.org/genomics/4-Variation/current_complete_ncov_genomes.fasta
 
 
-### Guidance (i.e., what you should do)
-We've said many times. This project isn't about everyone reaching the same point in a predetermined set of steps. It's about applying what we are learning in class to produce real data analysis for the community. It is about as *Learn by doing* as you could possibly get at Cal Poly. So what should you be doing this week for the project? Here is some guidance (but remember this is only to guide you and not box you into specific tasks). They are in no particular order. 
-* Consider what questions we want to ask from our evolutionary tree analysis. Think about what questions the book was trying to answer. Do we even have the data in this notebook to answer some of those questions? If not, spend time trying to find it now that you can know more about what to look for in terms of format. Do some literature searching and see what other work has been done for this virus and others.
-* Research and try different evolutionary tree programs/frameworks. What I've done below is not the only game in town by far. Biopython itself has different options.
-* Consider the alignment itself. Are there different ways to do this? Did we do it correctly?
-* What about the sequences themselves? Are they all of the same quality? Should we exclude some?
-* What about the virus alignment program? Did we use that correctly? Should we have done the entire sequence instead of using Spike as a reference? Should we try a different reference. 
-* Do we have more data available about the sequences? Part of world, etc. Can we do some digging here to answer different questions.
-* And I'm sure you can think of more to attempt... Think about what you want to do. Spend time working towards a well thoughtout goal. Document things as you go. Talk to everyone on Slack. Together we can do this!
+### Tools
+Biopython
+Biopython was utilized during this assignment, and was installed using
+pip install biopython
+
+Also used in this project was virulign. Virulign can be found at: https://github.com/rega-cev/virulign
 
 
-### Link to clone the repository
-Here is a link to the project repository.
-
-https://github.com/anderson-github-classroom/csc-448-project
-
-The website can be viewed at https://anderson-github-classroom.github.io/csc-448-project/.
-
-
-### First step is to get the data
-We are going to rely on the Galaxy team to pull together our sequence data for now. We might change this later.
+### Pulling Galaxy Project Data
+The previously cited Galaxy project data was gathered using the following code:
 
 ```python
 import wget
@@ -49,34 +38,10 @@ wget.download(url, file)
 ```
 
 ### Virus Alignment
-We will use a program specific for viral multiple alignments: https://github.com/rega-cev/virulign-tutorial
+When running virulign, I decided to compare the genome to the HIV-HXB2-env genome provided by virulign, because of all the rumors that have been spreading about the disease having a similar structure to HIV. I wanted to test how close the relation may be, and used the following commands to do so.
 
-https://academic.oup.com/bioinformatics/article/35/10/1763/5123354
+.\virulign .\HIV\HIV-HXB2-env.xml current_complete_ncov_genomes.fasta > alignment.mutations 2> alignment.err
 
-I downloaded the Mac binary and put it /Users/panderson/
-
-```python
-!/Users/panderson/bin/virulign
-```
-
-I also downloaded the tutorials and the program repository.
-
-```python
-!git clone https://github.com/rega-cev/virulign-tutorial ../../virulign-tutorial
-```
-
-```python
-!git clone https://github.com/rega-cev/virulign ../../virulign
-```
-
-### Before alignment
-As we mentioned in class, we need an alignment so we can derive our pairwise distance scores so we can then put together our distance matrix.
-
-This package contains a reference Spike protein that can be provided as an argument when performing alignment. This code took my computer a few minutes to run, so I've included the output in the project repository: csc-448-project/data/position_table.csv.
-
-```python jupyter={"outputs_hidden": true}
-!/Users/panderson/bin/virulign ../../virulign/references/SARS-CoV-2/S.xml ../../current_complete_ncov_genomes.fasta --exportAlphabet Nucleotides --exportKind PositionTable > ../../position_table.csv
-```
 
 ### Read the data into a pandas dataframe
 
