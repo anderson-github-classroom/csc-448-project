@@ -30,6 +30,10 @@ The Galaxy Project is an open-source project with the goal of providing "publica
 
 [Link to notebook](Project2.ipynb)
 
+## PROJECT 3
+
+[Link to notebook](Project3.ipynb)
+
 
 
 
