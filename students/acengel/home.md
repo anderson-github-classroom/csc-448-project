@@ -45,3 +45,7 @@ From what I can tell, this site will be extremely useful.  They have lots of pre
 ## Week 2
 
 I took at look at the COVID-19 genome with some phylogenetic trees.  Specifically, I wanted to investigate how the virus got to the US.  The notebook can be found <a href="https://nbviewer.jupyter.org/github/anderson-github-classroom/csc-448-project/blob/master/students/acengel/Project2.ipynb">here</a>.
+
+## Week 3
+
+I continued my efforts from last week with phylogenies.  This time, I looked at the spread of COVID-19 amongst states once it got into the US.  I had to redo some of my data scraping to stay up to date with my sources.  The notebook can be found <a href="https://nbviewer.jupyter.org/github/anderson-github-classroom/csc-448-project/blob/master/students/acengel/Project3.ipynb">here</a>.
