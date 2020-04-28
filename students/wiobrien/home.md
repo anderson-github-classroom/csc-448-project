@@ -131,6 +131,47 @@ There is ample room for improvement in this particular analysis. For starters, r
 ## Graphical Mapping of Relative Edit Distances
 For this week's advancement to my project, I implemented a few python modules to present the relative edit distances of nucleotide sequences on a globe map using OpenStreetMap with pins colored based on their relative edit distances. More specifically, each color is associated with one set of siblings in the produced distance tree. Each point is then mapped based on the country of sampling in the NCBI database. Note that some of these samples were only specific to a particular country, so differentiating between large amounts of samples from "China" or "Italy" will require significantly more work. The Geopy module was used to find the coordinates of locations based upon the strings used to describe their locations in each NCBI entry. Often this was only a country, so one point may represent more than one data point. More work is required to support more colors and provide more clarity on what each dot represents, but this serves as a very basic template for future improvements.
 
+### Extracting Location info from NCBI Samples
+Quite a bit of additional information was required from the samples to allow for the mapping of pins. To do this, a some string splicing with the aid of python geography module allowed for the retrieval of coordinates from the 'country' field of the samples. This was the most specific location info available for the samples I used last week, some samples specified the state or city of its relative country. Further improvements would involve searching for a different data source that featured more specific geographical identifiers.
+
+```python
+from geopy.geocoders import Nominatim
+
+geolocator = Nominatim()
+locations = []
+
+accession_data = {}
+
+def getCountry(sample):
+    s = sample[sample.index('country') + 32:]
+    return s[:s.index("'")]
+
+def getName(sample):
+    s = sample[sample.index("GBQualifier_name': 'organism'") + 53:]
+    return s[:s.index("'")]
+
+all_names = []
+x = -1
+for r in record:
+    x += 1
+    lc = ""
+    nm = str(x) + getName(str(r))
+    all_names.append(nm)
+    try:
+        lc = getCountry(str(r))
+
+    except:
+        continue
+    print(lc)
+    
+    location = geolocator.geocode(lc)        
+    locations.append({'host':nm,'location':[location.latitude, location.longitude]})
+        
+locations
+```
+
+A couple samples had no location specified, thus a try-catch statement was implemented to skip over those location-less samples.
+
 ### Assignment of Colors by Parent
 
 ```python
@@ -192,4 +233,5 @@ This code creates the map seen below. The map is interactable and each dot has a
 
 ![image](wk3map.png)
 
-
+### Room for Improvement
+There is again quite a bit of room for improvement following this week's advancements. For starters, more specific geographical identifiers are very necessary. I will address this by searching for samples that have more descriptive location information attached to them--be it through NCBI or other sources. I will work with my peers to see if they have found any particularly significant samples that I could pull from. Additionally, more color options are necessary. I will address this by implementing a more powerful coloring function that will use randomized rgb values to create a broader array of colors. Lastly, more information is necessary within each tag to allow for a more interactive presentation. As it stands, only the title is available for each pin when clicked. I will address this by exploring more of the data attached to each sample in addition to finding online examples to pull inspiration from. All in all, I like the idea of this graphical approach and am excited to further develop upon it in the coming weeks.
