@@ -88,8 +88,9 @@ This project, as well as the other tools provided by Galaxy, allows everybody to
 # Project 2
 Whenever there is a outbreak due to a new virus, scientists and researchers must determine where the virus came from, when it appeared, and how it was transmitted. To do this, they use evolutionary trees, or phylogenies. For this week's project, I wanted to construct phylogenies to answer the following questions: **What is the variation in the most uncommon sequences in the most affected countries?** The data analysis and phylogenetic trees can be found [here](https://nbviewer.jupyter.org/github/anderson-github-classroom/csc-448-project/blob/master/students/enewcome/Project2.ipynb).
 
-
-
+# Project 3
+This week, I continued my evolutionary tree analysis by looking at the variation in the earliest COVID-19 sequences in the US compared to the most recent sequences found in the US.
+The data analysis can be found [here](https://nbviewer.jupyter.org/github/anderson-github-classroom/csc-448-project/blob/master/students/enewcome/Project3.ipynb).
 
 
 
