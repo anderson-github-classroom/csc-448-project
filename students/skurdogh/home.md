@@ -135,4 +135,4 @@ My first analysis looks at the most frequent k-mers in both viruses, and counts 
 
 My second analysis calculates the edit distance between each sequence, creates a distance matrix, and then visualizes a phylogenic tree (below).
 
-My jupyter notebook can be found here.
+[My jupyter notebook can be found here.](https://nbviewer.jupyter.org/github/sarahkurd/bioinformatics-sample-code/blob/master/Week3.ipynb)
