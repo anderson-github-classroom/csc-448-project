@@ -118,6 +118,21 @@ This week, we are studying phylogenic trees. I gathered recent SARS-CoV-2 genomi
 
 I explain how to use virulign to align the target sequences with the reference. China, US, and combined data is put into respective dataframes. These dataframes are used to create a distance matrix, where distance of a sequence is the total number of nucleotides that differ from the reference sequence.
 
-I thought I would find more variaton in the sequences between China and the US, and was thinking that the US might have a more diverse distance matrix. But, my phylogenic trees show that recent submissions of SARS-CoV-2 sequences in both China and the US have about a 0-2 nucledotide distance from the reference coronavirus sequence.
+![USA vs China phylogenic tree](./USA_vs_China_tree.png)
+
+I thought I would find more variaton in the sequences between China and the US, and was thinking that the US might have a more diverse distance matrix. But, my phylogenic tree (above) show that recent submissions of SARS-CoV-2 sequences in both China and the US have about a 0-2 nucledotide distance from the reference coronavirus sequence.
 
 In the combined phylogenic tree, which was built by combing the dataframes for the US and China sequences, I actually found that most US sequences were on the same branch (similar) and sequences from China were also grouped together on branches. 
+
+---
+
+# Week 3
+This week, I worked with both SARS coronavirus and SARS-CoV-2 sequences. I wanted to find differences and similarities in their nucleotide sequences.
+
+My first analysis looks at the most frequent k-mers in both viruses, and counts how many of the same frequent k-mers occur in both. In the table below, I display the number of frequent i-mers for both SARS coronavirus and SARS-CoV-2, the number of common patterns between them, and what that common pattern is. I thought it was interesting how SARS had 32 frequent 13-mers and SARS-CoV-2 had 36, but they only had 2 common 13-mers.
+
+![Common frequent i-mers between SARS coronavirus and SARS-CoV-2](./frequent_i_mers.png)
+
+My second analysis calculates the edit distance between each sequence, creates a distance matrix, and then visualizes a phylogenic tree (below).
+
+My jupyter notebook can be found here.
