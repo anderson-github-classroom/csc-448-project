@@ -43,3 +43,7 @@ The Galaxy Project aims to be a resource that provides publicly accessible infra
 workflows for SARS-CoV-2 data analyses. Current available workflows include the following: 
 Genomics, Evolution, Cheminformatics. 
 ------------------------
+
+# weekly analysis
+
+* Weekly covid19 data [notebook] (https://nbviewer.jupyter.org/github/Tikiwings/csc448_data_analysis/blob/master/covid19_data_analysis.ipynb)
