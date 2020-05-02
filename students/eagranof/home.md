@@ -46,9 +46,16 @@ With little knowledge of bioinformatics this early in the quarter, this week is 
 
 # Week 2
 
-* See [here](https://nbviewer.jupyter.org/github/ethana1234/CSC448-work/blob/master/project/exampleTree.ipynb) for the starter code and example of analysis being done for this project.
-* See [here](https://nbviewer.jupyter.org/github/ethana1234/CSC448-work/blob/master/project/trimercomp.ipynb) for analysis of nucleotide composition of different coronavirus reference genomes.
+* See [here](https://nbviewer.jupyter.org/github/ethana1234/CSC448-work/blob/master/project/exampleTree.ipynb) for the starter code and example of analysis being done for this project. DNA alignment using virulign and Phylogenic tree building. Also includes attempts to use other alignment tools.
 
 ---
 
 # Week 3
+
+* See [here](https://nbviewer.jupyter.org/github/ethana1234/CSC448-work/blob/master/project/trimercomp.ipynb) for analysis of nucleotide composition of different coronavirus reference genomes. This first notebook is about trimer (3-mer) frequencies in each genome.
+* See [here](https://nbviewer.jupyter.org/github/ethana1234/CSC448-work/blob/master/project/gccontent.ipynb) for more comparison of coronaviruses. This notebook looks at GC content.
+
+---
+
+# Week 4
+* See [here]() for analysis on how coronavirus mutates and spreads, based on [this](https://www.nytimes.com/interactive/2020/04/30/science/coronavirus-mutations.html) NYT article.
