@@ -16,3 +16,7 @@ The link above contains uselfull information such as Nucleotide Sequences, SRA S
 ### GSAID https://www.gisaid.org/ -
 
 The GISAID Initiative promotes the international sharing of all influenza virus sequences, related clinical and epidemiological data associated with human viruses, and geographical as well as species-specific data associated with avian and other animal viruses, to help researchers understand how the viruses evolve, spread and potentially become pandemics
+
+## WEEK 2/3
+
+\*Project-2 [here](https://nbviewer.jupyter.org/github/SaiPamidi/CSC448-Project/blob/master/projPhyTree.ipynb)
