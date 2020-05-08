@@ -58,4 +58,4 @@ With little knowledge of bioinformatics this early in the quarter, this week is 
 ---
 
 # Week 4
-* See [here]() for analysis on how coronavirus mutates and spreads, based on [this](https://www.nytimes.com/interactive/2020/04/30/science/coronavirus-mutations.html) NYT article.
+* For this week, I tried to do some work based on [this](https://www.nytimes.com/interactive/2020/04/30/science/coronavirus-mutations.html) NYT article. In the hopes that I would be able to import and visualize the findings from the article, I unfortunately could not replicate the findings of the article. Maybe I'm missing important pieces of understanding of DNA/RNA sequences, but nonetheless, I spent a lot of time towards what was basically a deadend. I will still leave my notebook [here]() to better detail the issues I had trying to explore COVID-19 mutations.
