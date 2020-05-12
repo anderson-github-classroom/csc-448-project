@@ -40,11 +40,11 @@ The website can be viewed at https://anderson-github-classroom.github.io/csc-448
 We are going to rely on the Galaxy team to pull together our sequence data for now. We might change this later.
 
 ```python
-import wget
+#import wget
 
-url = 'https://covid19.galaxyproject.org/genomics/4-Variation/current_complete_ncov_genomes.fasta'
-file = 'current_complete_ncov_genomes.fasta'
-wget.download(url, file)
+#url = 'https://covid19.galaxyproject.org/genomics/4-Variation/current_complete_ncov_genomes.fasta'
+#file = 'current_complete_ncov_genomes.fasta'
+#wget.download(url, file)
 ```
 
 ### Virus Alignment
@@ -55,17 +55,17 @@ https://academic.oup.com/bioinformatics/article/35/10/1763/5123354
 I downloaded the Mac binary and put it /Users/panderson/
 
 ```python
-!/Users/richagadgil/Desktop/CSC448/csc-448-project/students/rgadgil
+#!/Users/richagadgil/Desktop/CSC448/csc-448-project/students/rgadgil
 ```
 
 I also downloaded the tutorials and the program repository.
 
 ```python
-!git clone https://github.com/rega-cev/virulign-tutorial 
+#!git clone https://github.com/rega-cev/virulign-tutorial 
 ```
 
 ```python
-!git clone https://github.com/rega-cev/virulign 
+#!git clone https://github.com/rega-cev/virulign 
 ```
 
 ### Before alignment
@@ -74,11 +74,11 @@ As we mentioned in class, we need an alignment so we can derive our pairwise dis
 This package contains a reference Spike protein that can be provided as an argument when performing alignment. This code took my computer a few minutes to run, so I've included the output in the project repository: csc-448-project/data/position_table.csv.
 
 ```python
-!virulign-1/references/SARS-CoV-2/S.xml current_complete_ncov_genomes.fasta --exportAlphabet Nucleotides --exportKind PositionTable > position_table.csv
+#!virulign-1/references/SARS-CoV-2/S.xml current_complete_ncov_genomes.fasta --exportAlphabet Nucleotides --exportKind PositionTable > position_table.csv
 ```
 
 ```python
-!virulign virulign-1/references/SARS-CoV-2/S.xml sequences.fasta --exportAlphabet Nucleotides --exportKind PositionTable > metadata_table.csv
+#!virulign virulign-1/references/SARS-CoV-2/S.xml sequences.fasta --exportAlphabet Nucleotides --exportKind PositionTable > metadata_table.csv
 ```
 
 ### Read the data into a pandas dataframe
@@ -140,7 +140,7 @@ def print_trees(country, position_table):
     print(country.upper())
     print("Neighbor Joining Tree")
     tree.ladderize()   # Flip branches so deeper clades are displayed at top
-    Phylo.draw(tree) 
+    display(Phylo.draw(tree))
     #**Please see the guidance at the top of the page for what to try**
 
     if(len(dm) > 1):
@@ -148,7 +148,7 @@ def print_trees(country, position_table):
         #Construction of a distance tree using clustering with the Unweighted Pair Group Method with Arithmatic Mean (UPGMA) -- stepwise differences
         print("UPGMA Tree")
         tree2.ladderize()   # Flip branches so deeper clades are displayed at top
-        Phylo.draw(tree2)
+        display(Phylo.draw(tree2))
         return
 
 

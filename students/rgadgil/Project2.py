@@ -44,11 +44,11 @@
 # We are going to rely on the Galaxy team to pull together our sequence data for now. We might change this later.
 
 # +
-import wget
+#import wget
 
-url = 'https://covid19.galaxyproject.org/genomics/4-Variation/current_complete_ncov_genomes.fasta'
-file = 'current_complete_ncov_genomes.fasta'
-wget.download(url, file)
+#url = 'https://covid19.galaxyproject.org/genomics/4-Variation/current_complete_ncov_genomes.fasta'
+#file = 'current_complete_ncov_genomes.fasta'
+#wget.download(url, file)
 # -
 
 # ### Virus Alignment
@@ -58,27 +58,35 @@ wget.download(url, file)
 #
 # I downloaded the Mac binary and put it /Users/panderson/
 
-!/Users/richagadgil/Desktop/CSC448/csc-448-project/students/rgadgil
+# +
+#!/Users/richagadgil/Desktop/CSC448/csc-448-project/students/rgadgil
+# -
 
 # I also downloaded the tutorials and the program repository.
 
-# !git clone https://github.com/rega-cev/virulign-tutorial 
+# +
+# #!git clone https://github.com/rega-cev/virulign-tutorial 
 
-# !git clone https://github.com/rega-cev/virulign 
+# +
+# #!git clone https://github.com/rega-cev/virulign 
+# -
 
 # ### Before alignment
 # As we mentioned in class, we need an alignment so we can derive our pairwise distance scores so we can then put together our distance matrix.
 #
 # This package contains a reference Spike protein that can be provided as an argument when performing alignment. This code took my computer a few minutes to run, so I've included the output in the project repository: csc-448-project/data/position_table.csv.
 
-# !virulign-1/references/SARS-CoV-2/S.xml current_complete_ncov_genomes.fasta --exportAlphabet Nucleotides --exportKind PositionTable > position_table.csv
+# +
+# #!sudo virulign/references/SARS-CoV-2/S.xml current_complete_ncov_genomes.fasta --exportAlphabet Nucleotides --exportKind PositionTable > position_table.csv
 
-# !virulign virulign-1/references/SARS-CoV-2/S.xml sequences.fasta --exportAlphabet Nucleotides --exportKind PositionTable > metadata_table.csv
+# +
+# #!virulign virulign-1/references/SARS-CoV-2/S.xml sequences.fasta --exportAlphabet Nucleotides --exportKind PositionTable > metadata_table.csv
+# -
 
 # ### Read the data into a pandas dataframe
 
 import pandas as pd
-position_table = pd.read_csv('position_table.csv') # or put in the path to csc-448-project/data/position_table.csv
+position_table = pd.read_csv('../../data/position_table.csv') # or put in the path to csc-448-project/data/position_table.csv
 
 position_table
 

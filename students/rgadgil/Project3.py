@@ -1,5 +1,17 @@
-#!/usr/bin/env python
-# coding: utf-8
+# ---
+# jupyter:
+#   jupytext:
+#     formats: ipynb,md,py
+#     text_representation:
+#       extension: .py
+#       format_name: light
+#       format_version: '1.5'
+#       jupytext_version: 1.4.2
+#   kernelspec:
+#     display_name: Python 3
+#     language: python
+#     name: python3
+# ---
 
 # ## Project Part 3 (a.k.a. Project 3 on Schedule)
 # For project 3, I would like you to continue working on your project 2 line of investigation OR pivot to something different depending on your results or understanding or feedback on project 2. I will work to review project 2 submissions this week, so I can provide more individualized feedback as well as extract some highlights.
@@ -16,86 +28,62 @@
 
 # ### Link to clone the repository
 # Here is a link to the project repository.
-# 
+#
 # https://github.com/anderson-github-classroom/csc-448-project
-# 
+#
 # The website can be viewed at https://anderson-github-classroom.github.io/csc-448-project/.
 
 # ### First step is to get the data
 # We are going to rely on the Galaxy team to pull together our sequence data for now. We might change this later.
 
-# In[ ]:
+# +
+#import wget
 
-
-import wget
-
-url = 'https://covid19.galaxyproject.org/genomics/4-Variation/current_complete_ncov_genomes.fasta'
-file = 'current_complete_ncov_genomes.fasta'
-wget.download(url, file)
-
+#url = 'https://covid19.galaxyproject.org/genomics/4-Variation/current_complete_ncov_genomes.fasta'
+#file = 'current_complete_ncov_genomes.fasta'
+#wget.download(url, file)
+# -
 
 # ### Virus Alignment
 # We will use a program specific for viral multiple alignments: https://github.com/rega-cev/virulign-tutorial
-# 
+#
 # https://academic.oup.com/bioinformatics/article/35/10/1763/5123354
-# 
+#
 # I downloaded the Mac binary and put it /Users/panderson/
 
-# In[ ]:
-
-
-get_ipython().system('/Users/richagadgil/Desktop/CSC448/csc-448-project/students/rgadgil')
-
+# +
+#!/Users/richagadgil/Desktop/CSC448/csc-448-project/students/rgadgil
+# -
 
 # I also downloaded the tutorials and the program repository.
 
-# In[ ]:
+# +
+# #!git clone https://github.com/rega-cev/virulign-tutorial 
 
-
-get_ipython().system('git clone https://github.com/rega-cev/virulign-tutorial ')
-
-
-# In[ ]:
-
-
-get_ipython().system('git clone https://github.com/rega-cev/virulign ')
-
+# +
+# #!git clone https://github.com/rega-cev/virulign 
+# -
 
 # ### Before alignment
 # As we mentioned in class, we need an alignment so we can derive our pairwise distance scores so we can then put together our distance matrix.
-# 
+#
 # This package contains a reference Spike protein that can be provided as an argument when performing alignment. This code took my computer a few minutes to run, so I've included the output in the project repository: csc-448-project/data/position_table.csv.
 
-# In[ ]:
+# +
+# #!virulign-1/references/SARS-CoV-2/S.xml current_complete_ncov_genomes.fasta --exportAlphabet Nucleotides --exportKind PositionTable > position_table.csv
 
-
-get_ipython().system('virulign-1/references/SARS-CoV-2/S.xml current_complete_ncov_genomes.fasta --exportAlphabet Nucleotides --exportKind PositionTable > position_table.csv')
-
-
-# In[ ]:
-
-
-get_ipython().system('virulign virulign-1/references/SARS-CoV-2/S.xml sequences.fasta --exportAlphabet Nucleotides --exportKind PositionTable > metadata_table.csv')
-
+# +
+# #!virulign virulign-1/references/SARS-CoV-2/S.xml sequences.fasta --exportAlphabet Nucleotides --exportKind PositionTable > metadata_table.csv
+# -
 
 # ### Read the data into a pandas dataframe
-
-# In[1]:
-
 
 import pandas as pd
 position_table = pd.read_csv('../../data/position_table.csv') # or put in the path to csc-448-project/data/position_table.csv
 
-
-# In[2]:
-
-
 position_table
 
-
-# In[3]:
-
-
+# +
 from Bio import Phylo
 from Bio.Phylo.Consensus import *
 import numpy as np
@@ -143,7 +131,7 @@ def print_trees(country, position_table):
     print(country.upper())
     print("Neighbor Joining Tree")
     tree.ladderize()   # Flip branches so deeper clades are displayed at top
-    Phylo.draw(tree) 
+    display(Phylo.draw(tree))
     #**Please see the guidance at the top of the page for what to try**
 
     if(len(dm) > 1):
@@ -151,7 +139,7 @@ def print_trees(country, position_table):
         #Construction of a distance tree using clustering with the Unweighted Pair Group Method with Arithmatic Mean (UPGMA) -- stepwise differences
         print("UPGMA Tree")
         tree2.ladderize()   # Flip branches so deeper clades are displayed at top
-        Phylo.draw(tree2)
+        display(Phylo.draw(tree2))
         return
 
 
@@ -173,9 +161,7 @@ def print_trees(country, position_table):
     #Phylo.draw(adam_tree)
 
 
-# In[4]:
-
-
+# +
 # Print Phylogenic Trees per Country
 new_pos_table = position_table
 new_pos_table['seqid'] = new_pos_table['seqid'].apply(lambda x: x.split(".")[0]).dropna()
@@ -190,9 +176,7 @@ for country in countries:
         print_trees(country, new_table)
 
 
-# In[5]:
-
-
+# +
 metadata_df = pd.read_csv('sequences.csv')
 
 collection_dates = list(set([i for i in metadata_df['Collection_Date'].values]))
@@ -207,44 +191,17 @@ for date in collection_dates:
     if(len(new_table) > 0):
         print_trees(date, new_table)
 
-
-# In[ ]:
-
-
+# +
 # TO DO: Add time series data 
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
+# -
 
 
 
 
 
-# In[ ]:
 
 
 
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
