@@ -562,7 +562,7 @@ for country in countries:
 
 
 
-    None
+     
 
 
     TAIWAN
@@ -574,7 +574,7 @@ for country in countries:
 
 
 
-    None
+     
 
 
     UPGMA Tree
@@ -585,7 +585,7 @@ for country in countries:
 
 
 
-    None
+     
 
 
     VIET NAM
@@ -597,7 +597,7 @@ for country in countries:
 
 
 
-    None
+     
 
 
     UPGMA Tree
@@ -608,7 +608,7 @@ for country in countries:
 
 
 
-    None
+     
 
 
     TURKEY
@@ -620,7 +620,7 @@ for country in countries:
 
 
 
-    None
+     
 
 
     GREECE
@@ -632,7 +632,7 @@ for country in countries:
 
 
 
-    None
+     
 
 
     UPGMA Tree
@@ -643,7 +643,7 @@ for country in countries:
 
 
 
-    None
+     
 
 
     AUSTRALIA
@@ -655,7 +655,7 @@ for country in countries:
 
 
 
-    None
+     
 
 
     SOUTH KOREA
@@ -667,7 +667,7 @@ for country in countries:
 
 
 
-    None
+     
 
 
     UPGMA Tree
@@ -678,7 +678,7 @@ for country in countries:
 
 
 
-    None
+     
 
 
     NAN
@@ -690,7 +690,7 @@ for country in countries:
 
 
 
-    None
+     
 
 
     SOUTH AFRICA
@@ -702,7 +702,228 @@ for country in countries:
 
 
 
-    None
+     
+
+
+    USA
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_40.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_17_43.png)
+
+
+
+     
+
+
+    SWEDEN
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_46.png)
+
+
+
+     
+
+
+    NEPAL
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_49.png)
+
+
+
+     
+
+
+    ISRAEL
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_52.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_17_55.png)
+
+
+
+     
+
+
+    SPAIN
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_58.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_17_61.png)
+
+
+
+     
+
+
+    ITALY
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_64.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_17_67.png)
+
+
+
+     
+
+
+    FRANCE
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_70.png)
+
+
+
+     
+
+
+    IRAN
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_73.png)
+
+
+
+     
+
+
+    CHINA
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_76.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_17_79.png)
+
+
+
+     
+
+
+    PERU
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_82.png)
+
+
+
+     
+
+
+    INDIA
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_85.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_17_88.png)
+
+
+
+     
+
+
+    PAKISTAN
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_91.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_17_94.png)
+
+
+
+     
 
 
 
@@ -721,6 +942,76 @@ for date in collection_dates:
     if(len(new_table) > 0):
         print_trees(date, new_table)
 ```
+
+    2020-01
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_18_1.png)
+
+
+
+     
+
+
+    2020-02
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_18_4.png)
+
+
+
+     
+
+
+    2020-03
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_18_7.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_18_10.png)
+
+
+
+     
+
+
+    2020-04
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_18_13.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_18_16.png)
+
+
+
+     
+
 
 
 ```python

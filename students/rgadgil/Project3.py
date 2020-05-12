@@ -140,7 +140,7 @@ def print_trees(country, position_table):
         print("UPGMA Tree")
         tree2.ladderize()   # Flip branches so deeper clades are displayed at top
         display(Phylo.draw(tree2))
-        return
+    return
 
 
     # Other experimental Trees

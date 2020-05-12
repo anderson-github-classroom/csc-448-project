@@ -1,21 +1,5 @@
----
-jupyter:
-  jupytext:
-    formats: ipynb,md,py
-    text_representation:
-      extension: .md
-      format_name: markdown
-      format_version: '1.2'
-      jupytext_version: 1.4.2
-  kernelspec:
-    display_name: Python 3
-    language: python
-    name: python3
----
-
 ## Project Part 3 (a.k.a. Project 3 on Schedule)
 For project 3, I would like you to continue working on your project 2 line of investigation OR pivot to something different depending on your results or understanding or feedback on project 2. I will work to review project 2 submissions this week, so I can provide more individualized feedback as well as extract some highlights.
-
 
 ### Guidance (i.e., what you should do)
 We've said many times. This project isn't about everyone reaching the same point in a predetermined set of steps. It's about applying what we are learning in class to produce real data analysis for the community. It is about as *Learn by doing* as you could possibly get at Cal Poly. So what should you be doing this week for the project? Here is some guidance (but remember this is only to guide you and not box you into specific tasks). They are in no particular order. 
@@ -27,7 +11,6 @@ We've said many times. This project isn't about everyone reaching the same point
 * Do we have more data available about the sequences? Part of world, etc. Can we do some digging here to answer different questions.
 * And I'm sure you can think of more to attempt... Think about what you want to do. Spend time working towards a well thoughtout goal. Document things as you go. Talk to everyone on Slack. Together we can do this!
 
-
 ### Link to clone the repository
 Here is a link to the project repository.
 
@@ -35,9 +18,9 @@ https://github.com/anderson-github-classroom/csc-448-project
 
 The website can be viewed at https://anderson-github-classroom.github.io/csc-448-project/.
 
-
 ### First step is to get the data
 We are going to rely on the Galaxy team to pull together our sequence data for now. We might change this later.
+
 
 ```python
 #import wget
@@ -54,15 +37,18 @@ https://academic.oup.com/bioinformatics/article/35/10/1763/5123354
 
 I downloaded the Mac binary and put it /Users/panderson/
 
+
 ```python
 #!/Users/richagadgil/Desktop/CSC448/csc-448-project/students/rgadgil
 ```
 
 I also downloaded the tutorials and the program repository.
 
+
 ```python
 #!git clone https://github.com/rega-cev/virulign-tutorial 
 ```
+
 
 ```python
 #!git clone https://github.com/rega-cev/virulign 
@@ -73,9 +59,11 @@ As we mentioned in class, we need an alignment so we can derive our pairwise dis
 
 This package contains a reference Spike protein that can be provided as an argument when performing alignment. This code took my computer a few minutes to run, so I've included the output in the project repository: csc-448-project/data/position_table.csv.
 
+
 ```python
 #!virulign-1/references/SARS-CoV-2/S.xml current_complete_ncov_genomes.fasta --exportAlphabet Nucleotides --exportKind PositionTable > position_table.csv
 ```
+
 
 ```python
 #!virulign virulign-1/references/SARS-CoV-2/S.xml sequences.fasta --exportAlphabet Nucleotides --exportKind PositionTable > metadata_table.csv
@@ -83,14 +71,333 @@ This package contains a reference Spike protein that can be provided as an argum
 
 ### Read the data into a pandas dataframe
 
+
 ```python
 import pandas as pd
 position_table = pd.read_csv('../../data/position_table.csv') # or put in the path to csc-448-project/data/position_table.csv
 ```
 
+
 ```python
 position_table
 ```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>seqid</th>
+      <th>S_1_1</th>
+      <th>S_1_2</th>
+      <th>S_1_3</th>
+      <th>S_2_1</th>
+      <th>S_2_2</th>
+      <th>S_2_3</th>
+      <th>S_3_1</th>
+      <th>S_3_2</th>
+      <th>S_3_3</th>
+      <th>...</th>
+      <th>S_1270_3</th>
+      <th>S_1271_1</th>
+      <th>S_1271_2</th>
+      <th>S_1271_3</th>
+      <th>S_1272_1</th>
+      <th>S_1272_2</th>
+      <th>S_1272_3</th>
+      <th>S_1273_1</th>
+      <th>S_1273_2</th>
+      <th>S_1273_3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>MT007544.1</td>
+      <td>A</td>
+      <td>T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>T</td>
+      <td>...</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+      <td>T</td>
+      <td>T</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>MT019529.1</td>
+      <td>A</td>
+      <td>T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>T</td>
+      <td>...</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+      <td>T</td>
+      <td>T</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>MT019530.1</td>
+      <td>A</td>
+      <td>T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>T</td>
+      <td>...</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+      <td>T</td>
+      <td>T</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>MT019531.1</td>
+      <td>A</td>
+      <td>T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>T</td>
+      <td>...</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+      <td>T</td>
+      <td>T</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>MT019532.1</td>
+      <td>A</td>
+      <td>T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>T</td>
+      <td>...</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+      <td>T</td>
+      <td>T</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>672</th>
+      <td>MT334544.1</td>
+      <td>A</td>
+      <td>T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>T</td>
+      <td>...</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+      <td>T</td>
+      <td>T</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>673</th>
+      <td>MT334546.1</td>
+      <td>A</td>
+      <td>T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>T</td>
+      <td>...</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+      <td>T</td>
+      <td>T</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>674</th>
+      <td>MT334547.1</td>
+      <td>A</td>
+      <td>T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>T</td>
+      <td>...</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+      <td>T</td>
+      <td>T</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>675</th>
+      <td>MT334557.1</td>
+      <td>A</td>
+      <td>T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>T</td>
+      <td>...</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+      <td>T</td>
+      <td>T</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>676</th>
+      <td>MT334561.1</td>
+      <td>A</td>
+      <td>T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>G</td>
+      <td>T</td>
+      <td>T</td>
+      <td>...</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+      <td>T</td>
+      <td>T</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+      <td>C</td>
+      <td>A</td>
+    </tr>
+  </tbody>
+</table>
+<p>677 rows × 3820 columns</p>
+</div>
+
+
+
 
 ```python
 from Bio import Phylo
@@ -171,6 +478,7 @@ def print_trees(country, position_table):
 
 ```
 
+
 ```python
 # Print Phylogenic Trees per Country
 new_pos_table = position_table
@@ -186,6 +494,380 @@ for country in countries:
         print_trees(country, new_table)
 
 ```
+
+    BRAZIL
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_1.png)
+
+
+
+     
+
+
+    TAIWAN
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_4.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_17_7.png)
+
+
+
+     
+
+
+    VIET NAM
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_10.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_17_13.png)
+
+
+
+     
+
+
+    TURKEY
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_16.png)
+
+
+
+     
+
+
+    GREECE
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_19.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_17_22.png)
+
+
+
+     
+
+
+    AUSTRALIA
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_25.png)
+
+
+
+     
+
+
+    SOUTH KOREA
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_28.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_17_31.png)
+
+
+
+     
+
+
+    NAN
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_34.png)
+
+
+
+     
+
+
+    SOUTH AFRICA
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_37.png)
+
+
+
+     
+
+
+    USA
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_40.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_17_43.png)
+
+
+
+     
+
+
+    SWEDEN
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_46.png)
+
+
+
+     
+
+
+    NEPAL
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_49.png)
+
+
+
+     
+
+
+    ISRAEL
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_52.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_17_55.png)
+
+
+
+     
+
+
+    SPAIN
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_58.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_17_61.png)
+
+
+
+     
+
+
+    ITALY
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_64.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_17_67.png)
+
+
+
+     
+
+
+    FRANCE
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_70.png)
+
+
+
+     
+
+
+    IRAN
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_73.png)
+
+
+
+     
+
+
+    CHINA
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_76.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_17_79.png)
+
+
+
+     
+
+
+    PERU
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_82.png)
+
+
+
+     
+
+
+    INDIA
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_85.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_17_88.png)
+
+
+
+     
+
+
+    PAKISTAN
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_17_91.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_17_94.png)
+
+
+
+     
+
+
 
 ```python
 metadata_df = pd.read_csv('sequences.csv')
@@ -203,29 +885,106 @@ for date in collection_dates:
         print_trees(date, new_table)
 ```
 
+    2020-01
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_18_1.png)
+
+
+
+     
+
+
+    2020-02
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_18_4.png)
+
+
+
+     
+
+
+    2020-03
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_18_7.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_18_10.png)
+
+
+
+     
+
+
+    2020-04
+    Neighbor Joining Tree
+
+
+
+![png](Project3_files/Project3_18_13.png)
+
+
+
+     
+
+
+    UPGMA Tree
+
+
+
+![png](Project3_files/Project3_18_16.png)
+
+
+
+     
+
+
+
 ```python
 # TO DO: Add time series data 
 ```
 
-```python
-
-```
 
 ```python
 
 ```
 
-```python
-
-```
 
 ```python
 
 ```
 
+
 ```python
 
 ```
+
+
+```python
+
+```
+
+
+```python
+
+```
+
 
 ```python
 
