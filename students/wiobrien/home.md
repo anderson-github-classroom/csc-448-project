@@ -235,3 +235,24 @@ This code creates the map seen below. The map is interactable and each dot has a
 
 ### Room for Improvement
 There is again quite a bit of room for improvement following this week's advancements. For starters, more specific geographical identifiers are very necessary. I will address this by searching for samples that have more descriptive location information attached to them--be it through NCBI or other sources. I will work with my peers to see if they have found any particularly significant samples that I could pull from. Additionally, more color options are necessary. I will address this by implementing a more powerful coloring function that will use randomized rgb values to create a broader array of colors. Lastly, more information is necessary within each tag to allow for a more interactive presentation. As it stands, only the title is available for each pin when clicked. I will address this by exploring more of the data attached to each sample in addition to finding online examples to pull inspiration from. All in all, I like the idea of this graphical approach and am excited to further develop upon it in the coming weeks.
+
+# Week 6
+### Improvements to Map Visualization Tool
+I worked this week to improve the visualization tool that I built earlier using OpenStreetMap. As it stands, this tool is primarily geared towards towards user interaction but it will soon produce descriptive sample images that we can add to our group Google Doc.
+#### Improvements
+- Randomization of colors: the tool now randomizes colors so that large datasets can generate a variety of pins
+- Clusters: the tool now uses clusters to show pins which allows for many pins with identical coordinate data to be visible (as seen below)
+- More descriptive bios: the tool now has more descriptive body content for the pins that show the regions of each sample's siblings
+
+![image](wk6map1.png)
+Randomized Colors, more descriptive bios
+
+![image](wk6map2.png)
+Pin clusters
+
+There is still lots of room for improvement regarding this tool, but I hope to have it in a form that I can publish in the next 3 weeks.
+
+### Research Additional Visualization Tools
+Additionally, I researched new tools that we can use to display our findings and answer our 2 main questions within the Google Doc. As it stands, we primarily have phylogenic trees and I feel a few additional figures using different visualization techniques may make the document more approachable to individuals unfamiliar with phylogenic trees.
+
+I'm working to get a chart created with https://github.com/jambler24/GenGraph/wiki on my local machine that I hope to upload once it is completed. If this tool proves to not be viable, I will explore the features of pybio and MatPlotLib that we have not yet implemented in our Google Doc. Either way, I hope to add some more descriptive charts and figures as soon as possible.
