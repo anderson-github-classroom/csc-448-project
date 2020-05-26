@@ -25,3 +25,8 @@ The GISAID Initiative promotes the international sharing of all influenza virus 
 
 comparing mutation between different coronaviruses - SARS,MERS,229E,SARS-COV2
 \*Project-3 [here](https://nbviewer.jupyter.org/github/SaiPamidi/CSC448-projectCoronavirusMutation/blob/master/CoronavirusMutations.ipynb)
+
+## WEEK 7
+
+Finding the mutation rates of SARS-CoV2 over a larger set.
+\*Project-4 [here](https://github.com/SaiPamidi/CSC448-project-sars-cov-2-mutation-rates/blob/master/mutationCovid19.ipynb)
