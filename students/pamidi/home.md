@@ -29,4 +29,4 @@ comparing mutation between different coronaviruses - SARS,MERS,229E,SARS-COV2
 ## WEEK 7
 
 Finding the mutation rates of SARS-CoV2 over a larger set.
-\*Project-4 [here](https://github.com/SaiPamidi/CSC448-project-sars-cov-2-mutation-rates/blob/master/mutationCovid19.ipynb)
+\*Project-4 [here](https://nbviewer.jupyter.org/github/SaiPamidi/CSC448-project-sars-cov-2-mutation-rates/blob/master/mutationCovid19.ipynb)
