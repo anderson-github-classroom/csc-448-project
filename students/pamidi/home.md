@@ -30,3 +30,8 @@ comparing mutation between different coronaviruses - SARS,MERS,229E,SARS-COV2
 
 Finding the mutation rates of SARS-CoV2 over a larger set.
 \*Project-4 [here](https://nbviewer.jupyter.org/github/SaiPamidi/CSC448-project-sars-cov-2-mutation-rates/blob/master/mutationCovid19.ipynb)
+
+## WEEK 8/9
+
+Analyzing the spike proteins in Coronoviruses
+\*Project-5 [here](https://nbviewer.jupyter.org/github/SaiPamidi/CSC448-SpikeProtein/blob/master/spike_protein_analysis.ipynb)
