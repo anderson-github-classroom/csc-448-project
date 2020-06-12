@@ -35,3 +35,8 @@ Finding the mutation rates of SARS-CoV2 over a larger set.
 
 Analyzing the spike proteins in Coronoviruses
 \*Project-5 [here](https://nbviewer.jupyter.org/github/SaiPamidi/CSC448-SpikeProtein/blob/master/spike_protein_analysis.ipynb)
+
+## Final Summary
+
+Analysis and results of previous projects
+\*final-paper [here](https://docs.google.com/document/d/1CGUhj_00nOjAT77hsksoY4gGnOV9hkQcnOuuzWU5vUc/edit?usp=sharing)
